@@ -6,6 +6,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 
 | Path | Skill | Description |
 |------|-------|-------------|
+| `video-creator/` | **video-creator** | End-to-end video: Imagine/Seedance + Voxtral voice + FFmpeg |
 | `SKILL.md` + `references/` | **dancing-skit** | Monty Python-style dance skit scripts |
 | `swedish-chef-cookoff/` | **swedish-chef-cookoff** | Muppets Swedish Chef cook-off challenges |
 | `aussie-bogan-personality/` | **aussie-bogan-personality** | Dazza — loveable Aussie bogan larrikin persona |
@@ -43,6 +44,10 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 ```powershell
 git clone https://github.com/Thedoctorjpg/skit-dance.git
 cd skit-dance
+
+# Video creator skill (Imagine + Seedance + Voxtral + FFmpeg)
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\video-creator" | Out-Null
+Copy-Item -Recurse video-creator\* "$env:USERPROFILE\.grok\skills\video-creator\"
 
 # Dancing skit script skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\dancing-skit" | Out-Null
@@ -376,15 +381,27 @@ Or: *"padel mode on"* / *"South American padel mode"*
 
 Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md), or [`video/prompts/skit-to-video-workflow.md`](video/prompts/skit-to-video-workflow.md) to convert a skit into Seedance clips.
 
+### Video creator (full pipeline)
+
+```
+/video-creator wacky dance montage with Scottish narrator
+```
+
+Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over for this script"*
+
+Pipeline: script → shot plan → Grok Imagine or Seedance visuals → Voxtral TTS/STT → FFmpeg mux. See [`video-creator/SKILL.md`](video-creator/SKILL.md).
+
 ### Full dance pipeline
 
 1. `/dancing-skit` → production `.md` script
-2. Map acts to Seedance prompts (workflow doc)
-3. Upload `video/assets/character-reference.jpg` as @Image1 in [Jimeng Seedance 2.0](https://jimeng.jianying.com/)
-4. Generate clips → FFmpeg concat
+2. `/video-creator` → shot table + Voxtral TTS blocks + FFmpeg commands
+3. Map acts to Seedance prompts (workflow doc)
+4. Upload `video/assets/character-reference.jpg` as @Image1 in [Jimeng Seedance 2.0](https://jimeng.jianying.com/)
+5. Generate clips → Voxtral voice → FFmpeg concat + mux
 
 ## Credits
 
+- **video-creator** — original skill for this repo; Voxtral patterns inspired by [Julia Turc](https://x.com/juliarturc/status/2069096367155507257) / [Mistral Voxtral](https://mistral.ai/news/voxtral/)
 - **dancing-skit** — original skill for this repo
 - **swedish-chef-cookoff** — original skill for this repo (Muppet Show parody; not affiliated with Disney/Muppets)
 - **aussie-bogan-personality** — original skill for this repo

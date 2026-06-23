@@ -9,14 +9,20 @@ Topic/vibe
     ↓
 /dancing-skit  →  production .md script (acts, dialogue, named moves)
     ↓
+/video-creator  →  shot table + production brief
+    ↓
 Extract choreography cues + scene descriptions per act
     ↓
 seedance/SKILL.md  →  Seedance 2.0 prompts with @ references
     ↓
 Jimeng Seedance 2.0  →  4–15s clips per act/scene
     ↓
-FFmpeg concat  →  final montage
+Voxtral TTS  →  dialogue/narration from script lines (not in Seedance prompt)
+    ↓
+FFmpeg concat + mux  →  final montage with voice + music
 ```
+
+For the full pipeline (Grok Imagine path, Voxtral STT on reference clips, FFmpeg ducking), see `video-creator/SKILL.md`.
 
 ## Step 1: Generate the skit script
 
@@ -73,4 +79,5 @@ THE HUMOURAL FLUTTER — wrist circles with medical conviction.
 - Seedance handles **literal motion** better than abstract comedy — write moves as physical actions, not jokes
 - Keep each clip to **one clear dance sequence** — busy multi-action prompts fail
 - Use **time-segmented prompts** (0–3s, 3–6s…) for clips over 8 seconds
-- The skit's **mundane dialogue** works better as on-screen text or post-production VO, not in Seedance prompts
+- The skit's **mundane dialogue** → **Voxtral TTS** in post (see `video-creator/references/voxtral-voice-pipeline.md`), not in Seedance prompts
+- Use personality voice guides (Scottish, chieftain, festival, etc.) for TTS `Text` and `Voice` direction blocks

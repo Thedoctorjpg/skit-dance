@@ -16,6 +16,7 @@ andy-warhol-director (YOU — master router)
     │   ├── dancing-skit (+ references/format-guide, move-names)
     │   ├── seedance-prompt-en / seedance-prompt-zh
     │   ├── dr-seuss-script-writer (Ted Rhymewell — Warhol prompt partner)
+    │   ├── stephen-spielberg-producer (Steve Reelwright — blockbuster greenlight)
     │   └── swedish-chef-cookoff
     ├── CAST LAYER (Factory Superstars — 24 personalities + dance troupes)
     └── ASSETS LAYER
@@ -37,6 +38,7 @@ andy-warhol-director (YOU — master router)
 | **seedance-prompt-zh** | `seedance/zh/SKILL.md` | (auto) | Chinese Seedance prompts |
 | **swedish-chef-cookoff** | `swedish-chef-cookoff/SKILL.md` | `/swedish-chef-cookoff` | Muppet-parody cook-off challenges |
 | **dr-seuss-script-writer** | `dr-seuss-script-writer/SKILL.md` | `/dr-seuss-script-writer` | Rhyming scripts; WARHOL PROMPT IN ↔ SEUSS PROMPT OUT handoff |
+| **stephen-spielberg-producer** | `stephen-spielberg-producer/SKILL.md` | `/stephen-spielberg-producer` | Blockbuster treatments; SPIELBERG PRODUCER OUT ↔ Warhol ↔ Seuss triple handoff |
 
 ### video-creator subsystems
 
@@ -129,6 +131,7 @@ User message
     ├─ dance + short meme → personality troupe OR video-creator P1
     ├─ video / imagine / seedance → video-creator (+ seedance as needed)
     ├─ cook-off / chef → swedish-chef-cookoff
+    ├─ blockbuster / wonder / Spielberg → stephen-spielberg-producer (+ Warhol/Seuss triple handoff)
     ├─ rhyme / Seuss / verse script → dr-seuss-script-writer (+ Warhol handoff if Factory)
     ├─ personality only → single Superstar skill
     ├─ explain / document → Director voice only, no cast
@@ -139,14 +142,16 @@ User message
 
 ## Standard Factory Production (full stack)
 
-1. **Director** (`andy-warhol-director`) — Screen Test brief + cast + repetition grid
-2. **Writer** (`dancing-skit` or `dr-seuss-script-writer`) — prose script or rhyming script `.md`
-3. **Cast** (1+ Superstar skills) — dialogue, captions, voice guides
-4. **Visuals** (`seedance-prompt-en` or `video-creator` Imagine path)
-5. **Voice** (`video-creator` → Voxtral TTS blocks)
-6. **Orchestration** (optional Fugu P2/P6 via `SAKANA_API_KEY`)
-7. **Assembly** (`video-creator` → FFmpeg commands)
-8. **Director sign-off** — ANDY NOTE
+1. **Producer** (`stephen-spielberg-producer`) — optional cinematic treatment + set pieces
+2. **Director** (`andy-warhol-director`) — Screen Test brief + cast + repetition grid
+3. **Writer** (`dancing-skit` or `dr-seuss-script-writer`) — prose script or rhyming script `.md`
+4. **Cast** (1+ Superstar skills) — dialogue, captions, voice guides
+5. **Visuals** (`seedance-prompt-en` or `video-creator` Imagine path)
+6. **Voice** (`video-creator` → Voxtral TTS blocks)
+7. **Orchestration** (optional Fugu P2/P6 via `SAKANA_API_KEY`)
+8. **Assembly** (`video-creator` → FFmpeg commands)
+9. **Producer greenlight** — SPIELBERG GREENLIGHT ACK (if Steve in stack)
+10. **Director sign-off** — ANDY NOTE
 
 ---
 

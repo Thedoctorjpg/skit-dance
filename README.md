@@ -8,6 +8,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 |------|-------|-------------|
 | `andy-warhol-director/` | **andy-warhol-director** | **Master director** — Factory persona routing all skills ([Master index](andy-warhol-director/Andy-Warhol-Director-Master.md)) |
 | `dr-seuss-script-writer/` | **dr-seuss-script-writer** | Ted Rhymewell — rhyming Seuss-style scripts; Warhol prompt handoff partner |
+| `stephen-spielberg-producer/` | **stephen-spielberg-producer** | Steve Reelwright — blockbuster producer; Warhol & Seuss triple handoff |
 | `video-creator/` | **video-creator** | End-to-end video: Fugu orchestration + Imagine/Seedance + Voxtral + FFmpeg |
 | `video-creator/pipelines/` | — | Sakana Fugu ready-made pipeline prompts (P1–P6) |
 | `SKILL.md` + `references/` | **dancing-skit** | Monty Python-style dance skit scripts |
@@ -55,6 +56,10 @@ Copy-Item -Recurse andy-warhol-director\* "$env:USERPROFILE\.grok\skills\andy-wa
 # Dr. Seuss script writer — rhyming Factory writer (pairs with Warhol)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\dr-seuss-script-writer" | Out-Null
 Copy-Item -Recurse dr-seuss-script-writer\* "$env:USERPROFILE\.grok\skills\dr-seuss-script-writer\"
+
+# Stephen Spielberg producer — blockbuster greenlight (pairs with Warhol & Seuss)
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\stephen-spielberg-producer" | Out-Null
+Copy-Item -Recurse stephen-spielberg-producer\* "$env:USERPROFILE\.grok\skills\stephen-spielberg-producer\"
 
 # Video creator skill (Imagine + Seedance + Voxtral + FFmpeg)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\video-creator" | Out-Null
@@ -183,6 +188,21 @@ Copy-Item seedance\zh\SKILL.md "$env:USERPROFILE\.grok\skills\seedance-prompt-zh
 Or: *"Factory mode"*, *"screen test"*, *"Warhol director"*
 
 Master index linking every skill: [`andy-warhol-director/Andy-Warhol-Director-Master.md`](andy-warhol-director/Andy-Warhol-Director-Master.md)
+
+### Stephen Spielberg producer + Warhol + Seuss (triple stack)
+
+```
+/stephen-spielberg-producer + /andy-warhol-director + /dr-seuss-script-writer
+Picture: Chief Jabari chases a glowing haggis through aisle 7 — rhyming blockbuster wonder
+```
+
+Or: *"Spielberg producer"*, *"Speilburg producer"*, *"blockbuster wonder"*, *"all three personas"*
+
+Triple handoff: [`stephen-spielberg-producer/references/triple-handoff-protocol.md`](stephen-spielberg-producer/references/triple-handoff-protocol.md)
+
+```
+/stephen-spielberg-producer cinematic treatment for padel chase in a cheese shop
+```
 
 ### Dr. Seuss script writer + Warhol combo
 
@@ -448,6 +468,7 @@ Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over"*, *"
 
 - **andy-warhol-director** — master router persona; Factory homage (not affiliated with AWF/estate)
 - **dr-seuss-script-writer** — Ted Rhymewell rhyming writer; Seuss-style homage (not affiliated with Seuss Enterprises)
+- **stephen-spielberg-producer** — Steve Reelwright blockbuster producer; Spielberg-style homage (not affiliated with Amblin/estate)
 - **video-creator** — original skill; [Sakana Fugu](https://sakana.ai/fugu) orchestration; Voxtral via [Julia Turc](https://x.com/juliarturc/status/2069096367155507257) / [Mistral](https://mistral.ai/news/voxtral/)
 - **dancing-skit** — original skill for this repo
 - **swedish-chef-cookoff** — original skill for this repo (Muppet Show parody; not affiliated with Disney/Muppets)

@@ -144,3 +144,5 @@ If only `andy-warhol-director` loaded and user wants rhyme:
 | WS-02 | Seuss meme quatrain → Warhol P1 silver wall |
 | WS-03 | Seuss + Superstar cast → Warhol P4 personality VO |
 | WS-04 | Seuss rhyme → Fugu P6 with both prompt blocks in input |
+
+Triple stack (with Spielberg): `stephen-spielberg-producer/references/triple-handoff-protocol.md` — recipes SWS-01–SWS-05

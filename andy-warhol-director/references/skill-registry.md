@@ -14,6 +14,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | PROD-04 | seedance-zh | `seedance/zh/SKILL.md` |
 | PROD-05 | swedish-chef-cookoff | `/swedish-chef-cookoff` |
 | PROD-06 | dr-seuss-script-writer | `/dr-seuss-script-writer` · `dr-seuss-script-writer/SKILL.md` |
+| PROD-07 | stephen-spielberg-producer | `/stephen-spielberg-producer` · `stephen-spielberg-producer/SKILL.md` |
 
 ## Fugu Pipelines (via PROD-02)
 
@@ -82,8 +83,13 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | **WS-02 Rhyme meme wall** | dr-seuss-script-writer (quatrain) → andy-warhol-director → video-creator P1 |
 | **WS-03 Rhyme + cast VO** | dr-seuss-script-writer + CAST-* → andy-warhol-director → video-creator P4 |
 | **WS-04 Rhyme autonomous** | dr-seuss-script-writer + andy-warhol-director → video-creator P6 (both prompt blocks) |
+| **SWS-01 Blockbuster rhyme skit** | stephen-spielberg-producer → andy-warhol-director → dr-seuss-script-writer → video-creator P2 |
+| **SWS-02 Wonder meme wall** | stephen-spielberg-producer → dr-seuss-script-writer → andy-warhol-director → video-creator P1 |
+| **SWS-03 Warhol → Steve polish** | andy-warhol-director → stephen-spielberg-producer → full stack |
+| **SWS-04 Seuss → Steve spectacle** | dr-seuss-script-writer → stephen-spielberg-producer → andy-warhol-director |
+| **SWS-05 Triple autonomous** | all three → video-creator P6 (SPIELBERG PRODUCER OUT + SEUSS PROMPT OUT) |
 
-Handoff protocol: `dr-seuss-script-writer/references/warhol-handoff-protocol.md`
+Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md` · `stephen-spielberg-producer/references/triple-handoff-protocol.md`
 
 ---
 
@@ -99,3 +105,5 @@ Handoff protocol: `dr-seuss-script-writer/references/warhol-handoff-protocol.md`
 | list skills / cast | Andy-Warhol-Director-Master.md |
 | rhyme / seuss / write in verse | PROD-06 (+ andy-warhol-director for Factory) |
 | warhol + seuss / both | andy-warhol-director + PROD-06 (handoff protocol) |
+| spielberg / speilburg / blockbuster producer | PROD-07 (+ andy-warhol-director + PROD-06 for triple stack) |
+| all three / wonder + rhyme + factory | PROD-07 + andy-warhol-director + PROD-06 (triple handoff) |

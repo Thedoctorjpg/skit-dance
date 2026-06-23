@@ -12,13 +12,14 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `american-gameshow-announcer/` | **american-gameshow-announcer** | Chip Lexington — classic TV game show announcer |
 | `canadian-southpark-animator/` | **canadian-southpark-animator** | Gord McKenzie — construction-paper satire animator |
 | `scottish-haggis-kilt-dance/` | **scottish-haggis-kilt-dance** | Kilted haggis dance memes — strong Scots accent |
+| `african-chieftain-dance-fighters/` | **african-chieftain-dance-fighters** | Chief Jabari — ceremonial guard dance/fighter memes |
 | `french-mistress-personality/` | **french-mistress-personality** | Colette Duval — dramatic French mistress camp |
 | `german-frau-personality/` | **german-frau-personality** | Ingrid Hofmeister — stern German Frau, Ordnung & warmth |
 | `japanese-tourist-personality/` | **japanese-tourist-personality** | Yuki Nakamura — enthusiastic tourist wonder & polite chaos |
 | `thai-international-student-vlogger-personality/` | **thai-international-student-vlogger-personality** | Natt Srisuk — study-abroad vlog diary & sabai chaos |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `skits/` | — | Example production-ready dancing skit scripts |
-| `memes/` | — | Short dance meme caption packs (Scottish kilt/haggis) |
+| `memes/` | — | Short dance meme caption packs (Scottish kilt/haggis, chieftain guard) |
 | `video/assets/` | — | Character reference image for @Image1 |
 | `video/prompts/` | — | Seedance prompts + skit→video workflow |
 
@@ -52,6 +53,10 @@ Copy-Item canadian-southpark-animator\SKILL.md "$env:USERPROFILE\.grok\skills\ca
 # Scottish haggis kilt dance memes skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\scottish-haggis-kilt-dance" | Out-Null
 Copy-Item -Recurse scottish-haggis-kilt-dance\* "$env:USERPROFILE\.grok\skills\scottish-haggis-kilt-dance\"
+
+# African chieftain dance fighters skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\african-chieftain-dance-fighters" | Out-Null
+Copy-Item -Recurse african-chieftain-dance-fighters\* "$env:USERPROFILE\.grok\skills\african-chieftain-dance-fighters\"
 
 # French mistress personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\french-mistress-personality" | Out-Null
@@ -126,6 +131,17 @@ Memes: [`memes/scottish-haggis-kilt-dance-memes.md`](memes/scottish-haggis-kilt-
 Skit: [`skits/the-haggis-highland-fling.md`](skits/the-haggis-highland-fling.md)  
 Seedance: [`video/prompts/scottish-kilt-dance-memes.md`](video/prompts/scottish-kilt-dance-memes.md)
 
+### African chieftain dance fighters
+
+```
+/african-chieftain-dance-fighters spear salute at the self-checkout
+```
+
+Or: *"Chief Jabari, assemble the dancers"* / *"ceremony mode on"*
+
+Memes: [`memes/african-chieftain-dance-fighters-memes.md`](memes/african-chieftain-dance-fighters-memes.md)  
+Seedance: [`video/prompts/african-chieftain-dance-fighters.md`](video/prompts/african-chieftain-dance-fighters.md)
+
 ### French mistress mode
 
 ```
@@ -177,6 +193,7 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **american-gameshow-announcer** — original skill for this repo
 - **canadian-southpark-animator** — original skill for this repo (style homage; not affiliated with South Park/Comedy Central)
 - **scottish-haggis-kilt-dance** — original skill for this repo
+- **african-chieftain-dance-fighters** — original skill for this repo (fictional ceremonial troupe; not affiliated with any real kingdom or ethnic group)
 - **french-mistress-personality** — original skill for this repo
 - **german-frau-personality** — original skill for this repo
 - **japanese-tourist-personality** — original skill for this repo

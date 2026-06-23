@@ -11,8 +11,10 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `aussie-bogan-personality/` | **aussie-bogan-personality** | Dazza — loveable Aussie bogan larrikin persona |
 | `american-gameshow-announcer/` | **american-gameshow-announcer** | Chip Lexington — classic TV game show announcer |
 | `canadian-southpark-animator/` | **canadian-southpark-animator** | Gord McKenzie — construction-paper satire animator |
+| `scottish-haggis-kilt-dance/` | **scottish-haggis-kilt-dance** | Kilted haggis dance memes — strong Scots accent |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `skits/` | — | Example production-ready dancing skit scripts |
+| `memes/` | — | Short dance meme caption packs (Scottish kilt/haggis) |
 | `video/assets/` | — | Character reference image for @Image1 |
 | `video/prompts/` | — | Seedance prompts + skit→video workflow |
 
@@ -42,6 +44,10 @@ Copy-Item american-gameshow-announcer\SKILL.md "$env:USERPROFILE\.grok\skills\am
 # Canadian South Park style animator skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\canadian-southpark-animator" | Out-Null
 Copy-Item canadian-southpark-animator\SKILL.md "$env:USERPROFILE\.grok\skills\canadian-southpark-animator\SKILL.md"
+
+# Scottish haggis kilt dance memes skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\scottish-haggis-kilt-dance" | Out-Null
+Copy-Item -Recurse scottish-haggis-kilt-dance\* "$env:USERPROFILE\.grok\skills\scottish-haggis-kilt-dance\"
 
 # Seedance prompt skills
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\seedance-prompt-en" | Out-Null
@@ -90,6 +96,16 @@ Gord, roll the cardboard
 
 Or: *"south park style on"* / *"animator mode on"*
 
+### Scottish kilt & haggis dance memes
+
+```
+/scottish-haggis-kilt-dance airport security Highland fling
+```
+
+Memes: [`memes/scottish-haggis-kilt-dance-memes.md`](memes/scottish-haggis-kilt-dance-memes.md)  
+Skit: [`skits/the-haggis-highland-fling.md`](skits/the-haggis-highland-fling.md)  
+Seedance: [`video/prompts/scottish-kilt-dance-memes.md`](video/prompts/scottish-kilt-dance-memes.md)
+
 ### Seedance video prompts
 
 Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md), or [`video/prompts/skit-to-video-workflow.md`](video/prompts/skit-to-video-workflow.md) to convert a skit into Seedance clips.
@@ -108,5 +124,6 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **aussie-bogan-personality** — original skill for this repo
 - **american-gameshow-announcer** — original skill for this repo
 - **canadian-southpark-animator** — original skill for this repo (style homage; not affiliated with South Park/Comedy Central)
+- **scottish-haggis-kilt-dance** — original skill for this repo
 - **seedance/** — adapted from [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) (MIT)
 - Wacky dance scene prompts inspired by [KakuDrop's Seedance 2.0 demo](https://x.com/KakuDrop/status/2069181320010543409)

@@ -16,6 +16,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `scottish-haggis-kilt-dance/` | **scottish-haggis-kilt-dance** | Kilted haggis dance memes — strong Scots accent |
 | `devout-irish-catholic-personality/` | **devout-irish-catholic-personality** | Declan O'Sullivan — warm parish faith & sure look it |
 | `african-chieftain-dance-fighters/` | **african-chieftain-dance-fighters** | Chief Jabari — ceremonial guard dance/fighter memes |
+| `chinese-festival-dancers/` | **chinese-festival-dancers** | Captain Wei — Jade Lantern Troupe fan/lion/ribbon memes |
 | `french-mistress-personality/` | **french-mistress-personality** | Colette Duval — dramatic French mistress camp |
 | `italian-shoe-shiner-personality/` | **italian-shoe-shiner-personality** | Giuseppe "Beppe" Rossini — sciuscià craftsman pride |
 | `russian-hairdresser-personality/` | **russian-hairdresser-personality** | Svetlana "Sveta" Volkova — salon bluntness & layers |
@@ -31,7 +32,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `singaporean-ladies-man-personality/` | **singaporean-ladies-man-personality** | Marcus "MJ" Tan — Singlish smooth charm & steady lah |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `skits/` | — | Example production-ready dancing skit scripts |
-| `memes/` | — | Short dance meme caption packs (Scottish kilt/haggis, chieftain guard) |
+| `memes/` | — | Short dance meme caption packs (Scottish, chieftain guard, Chinese festival) |
 | `video/assets/` | — | Character reference image for @Image1 |
 | `video/prompts/` | — | Seedance prompts + skit→video workflow |
 
@@ -77,6 +78,10 @@ Copy-Item -Recurse scottish-haggis-kilt-dance\* "$env:USERPROFILE\.grok\skills\s
 # African chieftain dance fighters skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\african-chieftain-dance-fighters" | Out-Null
 Copy-Item -Recurse african-chieftain-dance-fighters\* "$env:USERPROFILE\.grok\skills\african-chieftain-dance-fighters\"
+
+# Chinese festival dancers skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\chinese-festival-dancers" | Out-Null
+Copy-Item -Recurse chinese-festival-dancers\* "$env:USERPROFILE\.grok\skills\chinese-festival-dancers\"
 
 # French mistress personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\french-mistress-personality" | Out-Null
@@ -218,6 +223,17 @@ Or: *"Chief Jabari, assemble the dancers"* / *"ceremony mode on"*
 Memes: [`memes/african-chieftain-dance-fighters-memes.md`](memes/african-chieftain-dance-fighters-memes.md)  
 Seedance: [`video/prompts/african-chieftain-dance-fighters.md`](video/prompts/african-chieftain-dance-fighters.md)
 
+### Chinese festival dancers
+
+```
+/chinese-festival-dancers lion head at the self-checkout
+```
+
+Or: *"Captain Wei, cue the troupe"* / *"festival dance mode on"*
+
+Memes: [`memes/chinese-festival-dancers-memes.md`](memes/chinese-festival-dancers-memes.md)  
+Seedance: [`video/prompts/chinese-festival-dancers.md`](video/prompts/chinese-festival-dancers.md)
+
 ### French mistress mode
 
 ```
@@ -352,6 +368,7 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **canadian-southpark-animator** — original skill for this repo (style homage; not affiliated with South Park/Comedy Central)
 - **scottish-haggis-kilt-dance** — original skill for this repo
 - **african-chieftain-dance-fighters** — original skill for this repo (fictional ceremonial troupe; not affiliated with any real kingdom or ethnic group)
+- **chinese-festival-dancers** — original skill for this repo (fictional Jade Lantern Troupe; not affiliated with any real performance group or ethnic tradition)
 - **french-mistress-personality** — original skill for this repo
 - **italian-shoe-shiner-personality** — original skill for this repo
 - **russian-hairdresser-personality** — original skill for this repo

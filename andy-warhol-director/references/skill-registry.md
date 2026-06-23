@@ -57,6 +57,19 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | CAST-22 | icelandic-beauty-personality | `icelandic-beauty-personality/SKILL.md` | — |
 | CAST-23 | south-american-padel-enthusiast-personality | `south-american-padel-enthusiast-personality/SKILL.md` | — |
 | CAST-24 | singaporean-ladies-man-personality | `singaporean-ladies-man-personality/SKILL.md` | — |
+| CAST-25 | swedish-chef-cookoff | `swedish-chef-cookoff/SKILL.md` | `references/chef-vocabulary.md` |
+
+## Master Ensemble (production masters)
+
+| ID | skill name | path | role |
+|----|------------|------|------|
+| MASTER-01 | andy-warhol-director | `andy-warhol-director/SKILL.md` | director · router |
+| MASTER-02 | dr-seuss-script-writer | `dr-seuss-script-writer/SKILL.md` | writer |
+| MASTER-03 | stephen-spielberg-producer | `stephen-spielberg-producer/SKILL.md` | producer |
+| MASTER-04 | le-corbusier-set-designer | `le-corbusier-set-designer/SKILL.md` | set designer |
+| MASTER-05 | eddie-vedder-musician | `eddie-vedder-musician/SKILL.md` | musician |
+
+**Full cast assembly (30 + masters):** `references/full-cast-assembly.md`
 
 ---
 
@@ -100,6 +113,11 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | **ME-03 Rhyme + score** | dr-seuss-script-writer → eddie-vedder-musician → andy-warhol-director |
 | **ME-04 Steve music arc** | stephen-spielberg-producer → eddie-vedder-musician → le-corbusier-set-designer → andy-warhol-director |
 | **ME-06 Ensemble autonomous** | all five → video-creator P6 (all master prompt blocks) |
+| **CA-01 Full Factory Wall** | all CAST-01–25 → video-creator P4 personality montage |
+| **CA-02 Master + 4 Superstars** | MASTER-* + 4 CAST-* → video-creator P2 |
+| **CA-03 Global regional grid** | CAST-01–24 rotate on repetition grid → P1 |
+| **CA-04 Troupe triple + announcer** | CAST-06/07/08 + CAST-03 or 04 → P2 |
+| **CA-05 Full cast + master ensemble** | CA-01 + ME-01 → video-creator P6 |
 
 Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md` · `stephen-spielberg-producer/references/triple-handoff-protocol.md` · `le-corbusier-set-designer/references/quadruple-handoff-protocol.md` · `eddie-vedder-musician/references/master-ensemble-handoff-protocol.md`
 
@@ -123,3 +141,4 @@ Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md
 | all four / brutalist + wonder + rhyme | PROD-08 + PROD-07 + andy-warhol-director + PROD-06 (quadruple handoff) |
 | vedder / vetter / eddie / soundtrack / score | PROD-09 (+ other masters for ME-01) |
 | master ensemble / all five / full stack | PROD-06–09 + andy-warhol-director (master-ensemble handoff) |
+| cast all / full cast / assemble cast / factory wall everyone | `references/full-cast-assembly.md` → CA-01 |

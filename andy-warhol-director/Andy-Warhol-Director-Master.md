@@ -74,6 +74,9 @@ andy-warhol-director (YOU — master router)
 
 ## Cast — Factory Superstars
 
+> **Full assembly (30 personas + 5 masters):** [`references/full-cast-assembly.md`](references/full-cast-assembly.md)  
+> Trigger: *cast all* · *full cast* · *assemble cast* → **WARHOL CAST ASSEMBLY OUT**
+
 ### Announcers & hosts
 
 | Superstar | Skill | Path | Trigger phrase |
@@ -114,6 +117,15 @@ andy-warhol-director (YOU — master router)
 | Gord McKenzie (paper satire) | canadian-southpark-animator | `canadian-southpark-animator/SKILL.md` | — |
 | Swedish Chef | swedish-chef-cookoff | `swedish-chef-cookoff/SKILL.md` | — |
 
+### Master ensemble (on-set production personas)
+
+| Master | Skill | Path | Role |
+|--------|-------|------|------|
+| Ted Rhymewell | dr-seuss-script-writer | `dr-seuss-script-writer/SKILL.md` | Rhyming writer |
+| Steve Reelwright | stephen-spielberg-producer | `stephen-spielberg-producer/SKILL.md` | Blockbuster producer |
+| Le Corbu Modulier | le-corbusier-set-designer | `le-corbusier-set-designer/SKILL.md` | Set designer |
+| Eddie Stonevoice | eddie-vedder-musician | `eddie-vedder-musician/SKILL.md` | Soundtrack & vocals |
+
 ### Troupe meme & video packs
 
 | Pack | Memes | Seedance | Skit |
@@ -131,6 +143,7 @@ andy-warhol-director (YOU — master router)
 User message
     │
     ├─ "cast" / "who's available" → list Superstars from this file
+    ├─ "cast all" / "full cast" / "assemble" → full-cast-assembly.md → WARHOL CAST ASSEMBLY OUT
     ├─ dance + comedy script → dancing-skit → optional video-creator P2
     ├─ dance + short meme → personality troupe OR video-creator P1
     ├─ video / imagine / seedance → video-creator (+ seedance as needed)

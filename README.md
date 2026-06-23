@@ -197,6 +197,14 @@ Copy-Item seedance\zh\SKILL.md "$env:USERPROFILE\.grok\skills\seedance-prompt-zh
 
 Or: *"Factory mode"*, *"screen test"*, *"Warhol director"*
 
+**Full cast assembly (all 30 personality skills):**
+
+```
+/andy-warhol-director cast all — Factory wall, everyone dances the same beat 4×
+```
+
+Roster: [`andy-warhol-director/references/full-cast-assembly.md`](andy-warhol-director/references/full-cast-assembly.md)
+
 Master index linking every skill: [`andy-warhol-director/Andy-Warhol-Director-Master.md`](andy-warhol-director/Andy-Warhol-Director-Master.md)
 
 ### Eddie Vedder musician + master ensemble (all five)

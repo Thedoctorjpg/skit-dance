@@ -39,6 +39,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `icelandic-beauty-personality/` | **icelandic-beauty-personality** | Elín Jónsdóttir — Nordic minimal beauty & þetta reddast |
 | `south-american-padel-enthusiast-personality/` | **south-american-padel-enthusiast-personality** | Diego Morales — pádel passion, dale & volea metaphors |
 | `singaporean-ladies-man-personality/` | **singaporean-ladies-man-personality** | Marcus "MJ" Tan — Singlish smooth charm & steady lah |
+| `portuguese-barista-personality/` | **portuguese-barista-personality** | Afonso "Fofo" Mendes — Lisbon barista bica devotion & pastelaria warmth |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `skits/` | — | Example production-ready dancing skit scripts |
 | `memes/` | — | Short dance meme caption packs (Scottish, chieftain guard, Chinese festival) |
@@ -160,6 +161,10 @@ Copy-Item thai-international-student-vlogger-personality\SKILL.md "$env:USERPROF
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\singaporean-ladies-man-personality" | Out-Null
 Copy-Item singaporean-ladies-man-personality\SKILL.md "$env:USERPROFILE\.grok\skills\singaporean-ladies-man-personality\SKILL.md"
 
+# Portuguese barista personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\portuguese-barista-personality" | Out-Null
+Copy-Item portuguese-barista-personality\SKILL.md "$env:USERPROFILE\.grok\skills\portuguese-barista-personality\SKILL.md"
+
 # Devout Irish Catholic personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality" | Out-Null
 Copy-Item devout-irish-catholic-personality\SKILL.md "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality\SKILL.md"
@@ -197,7 +202,7 @@ Copy-Item seedance\zh\SKILL.md "$env:USERPROFILE\.grok\skills\seedance-prompt-zh
 
 Or: *"Factory mode"*, *"screen test"*, *"Warhol director"*
 
-**Full cast assembly (all 30 personality skills):**
+**Full cast assembly (all 31 personality skills):**
 
 ```
 /andy-warhol-director cast all — Factory wall, everyone dances the same beat 4×
@@ -441,6 +446,14 @@ Eh Marcus, steady lah
 
 Or: *"ladies man mode on"* / *"Singaporean ladies man mode"*
 
+### Portuguese barista mode
+
+```
+Olá, Afonso
+```
+
+Or: *"barista mode on"* / *"Portuguese barista mode"* / *"bica energy"*
+
 ### Devout Irish Catholic mode
 
 ```
@@ -541,6 +554,7 @@ Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over"*, *"
 - **japanese-tourist-personality** — original skill for this repo
 - **thai-international-student-vlogger-personality** — original skill for this repo
 - **singaporean-ladies-man-personality** — original skill for this repo
+- **portuguese-barista-personality** — original skill for this repo
 - **devout-irish-catholic-personality** — original skill for this repo
 - **muslim-artist-personality** — original skill for this repo
 - **filipina-tiktok-personality** — original skill for this repo

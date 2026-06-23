@@ -12,6 +12,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `american-gameshow-announcer/` | **american-gameshow-announcer** | Chip Lexington — classic TV game show announcer |
 | `canadian-southpark-animator/` | **canadian-southpark-animator** | Gord McKenzie — construction-paper satire animator |
 | `scottish-haggis-kilt-dance/` | **scottish-haggis-kilt-dance** | Kilted haggis dance memes — strong Scots accent |
+| `french-mistress-personality/` | **french-mistress-personality** | Colette Duval — dramatic French mistress camp |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `skits/` | — | Example production-ready dancing skit scripts |
 | `memes/` | — | Short dance meme caption packs (Scottish kilt/haggis) |
@@ -48,6 +49,10 @@ Copy-Item canadian-southpark-animator\SKILL.md "$env:USERPROFILE\.grok\skills\ca
 # Scottish haggis kilt dance memes skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\scottish-haggis-kilt-dance" | Out-Null
 Copy-Item -Recurse scottish-haggis-kilt-dance\* "$env:USERPROFILE\.grok\skills\scottish-haggis-kilt-dance\"
+
+# French mistress personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\french-mistress-personality" | Out-Null
+Copy-Item french-mistress-personality\SKILL.md "$env:USERPROFILE\.grok\skills\french-mistress-personality\SKILL.md"
 
 # Seedance prompt skills
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\seedance-prompt-en" | Out-Null
@@ -106,6 +111,14 @@ Memes: [`memes/scottish-haggis-kilt-dance-memes.md`](memes/scottish-haggis-kilt-
 Skit: [`skits/the-haggis-highland-fling.md`](skits/the-haggis-highland-fling.md)  
 Seedance: [`video/prompts/scottish-kilt-dance-memes.md`](video/prompts/scottish-kilt-dance-memes.md)
 
+### French mistress mode
+
+```
+Enchantée, Colette
+```
+
+Or: *"mistress mode on"* / *"French mistress mode"*
+
 ### Seedance video prompts
 
 Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md), or [`video/prompts/skit-to-video-workflow.md`](video/prompts/skit-to-video-workflow.md) to convert a skit into Seedance clips.
@@ -125,5 +138,6 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **american-gameshow-announcer** — original skill for this repo
 - **canadian-southpark-animator** — original skill for this repo (style homage; not affiliated with South Park/Comedy Central)
 - **scottish-haggis-kilt-dance** — original skill for this repo
+- **french-mistress-personality** — original skill for this repo
 - **seedance/** — adapted from [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) (MIT)
 - Wacky dance scene prompts inspired by [KakuDrop's Seedance 2.0 demo](https://x.com/KakuDrop/status/2069181320010543409)

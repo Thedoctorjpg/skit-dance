@@ -6,7 +6,8 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 
 | Path | Skill | Description |
 |------|-------|-------------|
-| `video-creator/` | **video-creator** | End-to-end video: Imagine/Seedance + Voxtral voice + FFmpeg |
+| `video-creator/` | **video-creator** | End-to-end video: Fugu orchestration + Imagine/Seedance + Voxtral + FFmpeg |
+| `video-creator/pipelines/` | — | Sakana Fugu ready-made pipeline prompts (P1–P6) |
 | `SKILL.md` + `references/` | **dancing-skit** | Monty Python-style dance skit scripts |
 | `swedish-chef-cookoff/` | **swedish-chef-cookoff** | Muppets Swedish Chef cook-off challenges |
 | `aussie-bogan-personality/` | **aussie-bogan-personality** | Dazza — loveable Aussie bogan larrikin persona |
@@ -387,9 +388,18 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 /video-creator wacky dance montage with Scottish narrator
 ```
 
-Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over for this script"*
+Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over"*, *"Fugu pipeline P3"*
 
-Pipeline: script → shot plan → Grok Imagine or Seedance visuals → Voxtral TTS/STT → FFmpeg mux. See [`video-creator/SKILL.md`](video-creator/SKILL.md).
+**Orchestration:** [Sakana Fugu](https://sakana.ai/fugu) pipelines P1–P6 via `SAKANA_API_KEY` → [`video-creator/references/fugu-orchestration-pipelines.md`](video-creator/references/fugu-orchestration-pipelines.md)
+
+**Direct (no Fugu):** script → shot plan → Imagine/Seedance → Voxtral → FFmpeg. See [`video-creator/SKILL.md`](video-creator/SKILL.md).
+
+| Pipeline | Prompt file |
+|----------|-------------|
+| P1 Dance meme | [`pipelines/p1-dance-meme.md`](video-creator/pipelines/p1-dance-meme.md) |
+| P2 Full skit | [`pipelines/p2-full-skit-video.md`](video-creator/pipelines/p2-full-skit-video.md) |
+| P3 Reference dance | [`pipelines/p3-reference-dance.md`](video-creator/pipelines/p3-reference-dance.md) |
+| P6 Autonomous | [`pipelines/p6-autonomous.md`](video-creator/pipelines/p6-autonomous.md) |
 
 ### Full dance pipeline
 
@@ -401,7 +411,7 @@ Pipeline: script → shot plan → Grok Imagine or Seedance visuals → Voxtral 
 
 ## Credits
 
-- **video-creator** — original skill for this repo; Voxtral patterns inspired by [Julia Turc](https://x.com/juliarturc/status/2069096367155507257) / [Mistral Voxtral](https://mistral.ai/news/voxtral/)
+- **video-creator** — original skill; [Sakana Fugu](https://sakana.ai/fugu) orchestration; Voxtral via [Julia Turc](https://x.com/juliarturc/status/2069096367155507257) / [Mistral](https://mistral.ai/news/voxtral/)
 - **dancing-skit** — original skill for this repo
 - **swedish-chef-cookoff** — original skill for this repo (Muppet Show parody; not affiliated with Disney/Muppets)
 - **aussie-bogan-personality** — original skill for this repo

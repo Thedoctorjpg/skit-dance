@@ -5,25 +5,63 @@ description: >
   synthesize voice/narration with Voxtral TTS, transcribe reference audio with Voxtral STT, mux
   audio with FFmpeg, and deliver a production brief. Trigger when the user asks for video creator,
   imagine-video, make a video, video production pipeline, voice-over for video, narrated skit video,
-  Voxtral voice, or combines script + dance + narration into a finished clip. Also trigger for
-  /video-creator and /imagine-video requests. Do NOT use for static images only or professional
-  broadcast mastering.
+  Voxtral voice, Sakana Fugu orchestration, or combines script + dance + narration into a finished
+  clip. Also trigger for /video-creator, /imagine-video, and Fugu pipeline requests. Do NOT use
+  for static images only or professional broadcast mastering.
 ---
 
 # Video Creator Skill
 
 Orchestrates the full pipeline from idea → script → visuals → voice → assembled video.
 
-**Philosophy (Julia Turc / Voxtral):** Plug LLMs into voice workflows instead of handwritten rules. Use Voxtral for speech understanding and TTS; use agent skills for creative structure — not brittle if/else voice trees.
+**Philosophy:** Plug LLMs into voice and orchestration instead of handwritten rules.
+- **Voxtral** (Julia Turc) — speech TTS/STT, not brittle voice trees
+- **Sakana Fugu** — multi-agent orchestration across script/visual/voice/assembly steps
 
 ---
 
-## Pipeline Overview
+## Orchestration Mode
+
+| Mode | When |
+|------|------|
+| **Fugu pipeline** | `SAKANA_API_KEY` set, or user asks for Fugu / multi-agent orchestration |
+| **Direct (Grok agent)** | No Sakana key — agent runs steps manually using references below |
+
+### Fugu pipelines (Sakana)
+
+See `references/fugu-orchestration-pipelines.md` and ready-made prompts in `pipelines/`:
+
+| ID | Name | Model | Use |
+|----|------|-------|-----|
+| P1 | Dance Meme | `fugu` | Short meme captions + Seedance shots |
+| P2 | Full Skit Video | `fugu-ultra` | Acts + Voxtral VO + visuals + FFmpeg |
+| P3 | Reference Dance | `fugu` | @Image1 + @Video1 KakuDrop-style replication |
+| P4 | Personality VO | `fugu` | Voice guide + montage (in fugu doc) |
+| P5 | Narrated Explainer | `fugu-ultra` | Educational VO + visuals (in fugu doc) |
+| P6 | Autonomous | `fugu-ultra` | One prompt → full production brief |
+
+```python
+from openai import OpenAI
+client = OpenAI(base_url="https://api.sakana.ai/v1", api_key=os.environ["SAKANA_API_KEY"])
+response = client.responses.create(
+    model="fugu-ultra",
+    input=open("pipelines/p2-full-skit-video.md").read().replace("{TOPIC}", topic),
+    timeout=600.0,
+)
+```
+
+Pick pipeline by task complexity; default to **P6** when user request is open-ended.
+
+---
+
+## Pipeline Overview (direct mode)
 
 ```
 Topic / vibe / reference link
     ↓
-[Optional] personality or dancing-skit skill → script .md
+[Optional] Sakana Fugu → pipeline P1–P6 (orchestrated)
+    OR
+[Optional] personality / dancing-skit skill → script .md
     ↓
 Shot plan (6–10s beats)
     ↓
@@ -38,7 +76,7 @@ FFmpeg: concat clips → mux voice + music → final .mp4
 Production brief .md delivered to user
 ```
 
-See `references/voxtral-voice-pipeline.md`, `references/grok-imagine-shots.md`, and `references/audio-mux-ffmpeg.md`.
+See `references/fugu-orchestration-pipelines.md`, `references/voxtral-voice-pipeline.md`, `references/grok-imagine-shots.md`, and `references/audio-mux-ffmpeg.md`.
 
 ---
 
@@ -51,6 +89,7 @@ Before generating, check what's available:
 | `image_gen` / `image_edit` | Source frames | Tell user to use Grok TUI `/imagine` or xAI API |
 | `image_to_video` / `reference_to_video` | Animate shots | Grok TUI `/imagine-video` or xAI `grok-imagine-video` API |
 | Voxtral API / local model | TTS + STT | Mistral API, Hugging Face `mistralai/Voxtral-*`, or manual VO |
+| Sakana Fugu API | Multi-step orchestration | Direct skill steps; `pipelines/*.md` prompts for manual Fugu call |
 | FFmpeg | Concat + mux | Provide commands for user to run |
 
 Never invent tool results. If video tools are absent in the current session, output the full production brief and prompts so the user can run them in Grok TUI or API.
@@ -223,6 +262,8 @@ TTS `Text` field uses phonetic/dialogue from the guide; `Voice` field describes 
 
 ## Reference Files
 
+- `references/fugu-orchestration-pipelines.md` — Sakana Fugu P1–P6 pipelines
+- `pipelines/` — Ready-made Fugu prompt templates (p1, p2, p3, p6)
 - `references/voxtral-voice-pipeline.md` — Voxtral STT/TTS/realtime patterns
 - `references/grok-imagine-shots.md` — Shot planning + Imagine tool usage
 - `references/audio-mux-ffmpeg.md` — Concat, mux, ducking commands
@@ -235,3 +276,4 @@ TTS `Text` field uses phonetic/dialogue from the guide; `Voice` field describes 
 - [Julia Turc Voxtral deep-dive](https://x.com/juliarturc/status/2069096367155507257) — LLM + voice vs handwritten rules
 - [Grok Imagine video API](https://docs.x.ai/developers/model-capabilities/video/generation)
 - [KakuDrop Seedance dance demo](https://x.com/KakuDrop/status/2069181320010543409)
+- [Sakana Fugu](https://sakana.ai/fugu) — multi-agent orchestration API ([get started](https://console.sakana.ai/get-started))

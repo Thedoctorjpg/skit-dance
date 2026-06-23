@@ -17,6 +17,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `french-mistress-personality/` | **french-mistress-personality** | Colette Duval — dramatic French mistress camp |
 | `german-frau-personality/` | **german-frau-personality** | Ingrid Hofmeister — stern German Frau, Ordnung & warmth |
 | `dutch-cheese-enthusiast-personality/` | **dutch-cheese-enthusiast-personality** | Pieter van der Berg — gezellig kaas devotion |
+| `korean-gangnam-girl-personality/` | **korean-gangnam-girl-personality** | Park Min-ju — Gangnam K-beauty & cafe influencer chic |
 | `japanese-tourist-personality/` | **japanese-tourist-personality** | Yuki Nakamura — enthusiastic tourist wonder & polite chaos |
 | `thai-international-student-vlogger-personality/` | **thai-international-student-vlogger-personality** | Natt Srisuk — study-abroad vlog diary & sabai chaos |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
@@ -75,6 +76,10 @@ Copy-Item german-frau-personality\SKILL.md "$env:USERPROFILE\.grok\skills\german
 # Dutch cheese enthusiast personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\dutch-cheese-enthusiast-personality" | Out-Null
 Copy-Item dutch-cheese-enthusiast-personality\SKILL.md "$env:USERPROFILE\.grok\skills\dutch-cheese-enthusiast-personality\SKILL.md"
+
+# Korean Gangnam girl personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\korean-gangnam-girl-personality" | Out-Null
+Copy-Item korean-gangnam-girl-personality\SKILL.md "$env:USERPROFILE\.grok\skills\korean-gangnam-girl-personality\SKILL.md"
 
 # Japanese tourist personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\japanese-tourist-personality" | Out-Null
@@ -184,6 +189,14 @@ Goedemorgen, Pieter
 
 Or: *"cheese mode on"* / *"Dutch cheese mode"*
 
+### Korean Gangnam girl mode
+
+```
+Annyeong, Min-ju
+```
+
+Or: *"Gangnam mode on"* / *"Gangnam girl mode"* (also *"ganganam girl"*)
+
 ### Japanese tourist mode
 
 ```
@@ -224,6 +237,7 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **french-mistress-personality** — original skill for this repo
 - **german-frau-personality** — original skill for this repo
 - **dutch-cheese-enthusiast-personality** — original skill for this repo
+- **korean-gangnam-girl-personality** — original skill for this repo
 - **japanese-tourist-personality** — original skill for this repo
 - **thai-international-student-vlogger-personality** — original skill for this repo
 - **seedance/** — adapted from [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) (MIT)

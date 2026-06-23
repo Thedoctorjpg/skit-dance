@@ -20,10 +20,17 @@ Post videos programmatically via [X API v2](https://docs.x.com/x-api/introductio
 
 Generate an **OAuth 2.0 User Access Token** for the @ADHDloganberry account (not app-only bearer for posting).
 
-Store in `.env`:
+Store in `.env` (never commit — `.gitignore` blocks it):
 
 ```
 X_USER_ACCESS_TOKEN=...
+```
+
+Or run the setup script (verifies token, writes `.env` locally only):
+
+```powershell
+cd adhdloganberry-feed
+.\scripts\setup-token.ps1 -Token "YOUR_OAUTH2_USER_ACCESS_TOKEN"
 ```
 
 ---

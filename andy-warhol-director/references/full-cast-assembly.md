@@ -3,7 +3,7 @@
 > **Assembled from every personality skill file in skit-dance**  
 > Source of truth for `andy-warhol-director` when user says *cast all*, *full cast*, *assemble cast*, or *Factory wall*.
 
-**Total:** 31 performance personas + Andy (director/router) = **32 skills**
+**Total:** 32 performance personas + Andy (director/router) = **33 skills**
 
 ---
 
@@ -30,7 +30,7 @@ Handoff: `eddie-vedder-musician/references/master-ensemble-handoff-protocol.md`
 
 ---
 
-## Layer 3 — Regional personalities (CAST-01–02, CAST-09–24, CAST-26)
+## Layer 3 — Regional personalities (CAST-01–02, CAST-09–24, CAST-26–27)
 
 | ID | Superstar | Skill | Region / vibe | Trigger |
 |----|-----------|-------|---------------|---------|
@@ -53,6 +53,7 @@ Handoff: `eddie-vedder-musician/references/master-ensemble-handoff-protocol.md`
 | CAST-23 | Diego Morales | `south-american-padel-enthusiast-personality` | Pádel passion | *"Qué tal, Diego"* |
 | CAST-24 | Marcus "MJ" Tan | `singaporean-ladies-man-personality` | Singlish charm | *"Eh Marcus, steady lah"* |
 | CAST-26 | Afonso "Fofo" Mendes | `portuguese-barista-personality` | Lisbon barista · bica devotion | *"Olá, Afonso"* |
+| CAST-27 | Marcus "Mav" Freefall | `tom-cruise-stuntman-personality` | Practical stunt performer · one-take energy | *"Mav, we're rolling"* |
 
 ---
 
@@ -109,6 +110,7 @@ Handoff: `eddie-vedder-musician/references/master-ensemble-handoff-protocol.md`
 | `stephen-spielberg-producer` | Steve Reelwright |
 | `swedish-chef-cookoff` | Swedish Chef |
 | `thai-international-student-vlogger-personality` | Natt Srisuk |
+| `tom-cruise-stuntman-personality` | Mav Freefall |
 | `swiss-banker-personality` | Klaus Meier |
 
 ---
@@ -121,7 +123,7 @@ Andy emits when user requests full cast:
 ## WARHOL CAST ASSEMBLY OUT
 **From:** Andy Warhol Director · Silver Screen Test Division
 **Screen Test #:** [N]
-**Cast count:** 31 performance personas (+ master ensemble layer)
+**Cast count:** 32 performance personas (+ master ensemble layer)
 
 ### Master ensemble (on set)
 MASTER-01 Andy · MASTER-02 Ted · MASTER-03 Steve · MASTER-04 Corbu · MASTER-05 Eddie
@@ -129,8 +131,8 @@ MASTER-01 Andy · MASTER-02 Ted · MASTER-03 Steve · MASTER-04 Corbu · MASTER-
 ### Announcers
 CAST-03 Chip · CAST-04 Muzz
 
-### Regional wall (19)
-CAST-01 Dazza · CAST-02 Gaz · CAST-09 Declan · CAST-10 Yusuf · CAST-11 Colette · CAST-12 Beppe · CAST-13 Sveta · CAST-14 Ingrid · CAST-15 Pieter · CAST-16 Klaus · CAST-17 Min-ju · CAST-18 Sio · CAST-19 Yuki · CAST-20 Natt · CAST-21 Bea · CAST-22 Elín · CAST-23 Diego · CAST-24 MJ · CAST-26 Afonso
+### Regional wall (20)
+CAST-01 Dazza · CAST-02 Gaz · CAST-09 Declan · CAST-10 Yusuf · CAST-11 Colette · CAST-12 Beppe · CAST-13 Sveta · CAST-14 Ingrid · CAST-15 Pieter · CAST-16 Klaus · CAST-17 Min-ju · CAST-18 Sio · CAST-19 Yuki · CAST-20 Natt · CAST-21 Bea · CAST-22 Elín · CAST-23 Diego · CAST-24 MJ · CAST-26 Afonso · CAST-27 Mav
 
 ### Dance troupes
 CAST-06 Scottish · CAST-07 Chieftain guard · CAST-08 Jade Lantern
@@ -153,7 +155,7 @@ That's very good. Everyone is here. We'll shoot it four times.
 
 | ID | Recipe | Pipeline |
 |----|--------|----------|
-| CA-01 | **Full Factory Wall** — all CAST-01–26 in one montage | video-creator P4 |
+| CA-01 | **Full Factory Wall** — all CAST-01–27 in one montage | video-creator P4 |
 | CA-02 | **Master + 4 Superstars** — pick 4 from CAST + MASTER layer | P2 |
 | CA-03 | **Global regional grid** — CAST-01–24 + CAST-26 rotate per grid variant | P1 meme wall |
 | CA-04 | **Troupe triple + announcer** — CAST-06/07/08 + CAST-03 or 04 | P2 |

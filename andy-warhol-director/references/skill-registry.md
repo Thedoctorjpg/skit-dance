@@ -60,6 +60,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | CAST-24 | singaporean-ladies-man-personality | `singaporean-ladies-man-personality/SKILL.md` | — |
 | CAST-25 | swedish-chef-cookoff | `swedish-chef-cookoff/SKILL.md` | `references/chef-vocabulary.md` |
 | CAST-26 | portuguese-barista-personality | `portuguese-barista-personality/SKILL.md` | — |
+| CAST-27 | tom-cruise-stuntman-personality | `tom-cruise-stuntman-personality/SKILL.md` | — |
 
 ## Master Ensemble (production masters)
 
@@ -71,7 +72,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | MASTER-04 | le-corbusier-set-designer | `le-corbusier-set-designer/SKILL.md` | set designer |
 | MASTER-05 | eddie-vedder-musician | `eddie-vedder-musician/SKILL.md` | musician |
 
-**Full cast assembly (31 + masters):** `references/full-cast-assembly.md`
+**Full cast assembly (32 + masters):** `references/full-cast-assembly.md`
 
 ---
 
@@ -115,7 +116,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | **ME-03 Rhyme + score** | dr-seuss-script-writer → eddie-vedder-musician → andy-warhol-director |
 | **ME-04 Steve music arc** | stephen-spielberg-producer → eddie-vedder-musician → le-corbusier-set-designer → andy-warhol-director |
 | **ME-06 Ensemble autonomous** | all five → video-creator P6 (all master prompt blocks) |
-| **CA-01 Full Factory Wall** | all CAST-01–26 → video-creator P4 personality montage |
+| **CA-01 Full Factory Wall** | all CAST-01–27 → video-creator P4 personality montage |
 | **CA-02 Master + 4 Superstars** | MASTER-* + 4 CAST-* → video-creator P2 |
 | **CA-03 Global regional grid** | CAST-01–24 rotate on repetition grid → P1 |
 | **CA-04 Troupe triple + announcer** | CAST-06/07/08 + CAST-03 or 04 → P2 |

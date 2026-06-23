@@ -97,6 +97,7 @@ Map user vibe → personality skill:
 | Pádel passion | Diego | `/south-american-padel-enthusiast-personality` |
 | Singlish charm | MJ | `/singaporean-ladies-man-personality` |
 | Bica devotion | Afonso | `/portuguese-barista-personality` |
+| Practical stunt takes | Mav | `/tom-cruise-stuntman-personality` |
 | Muppet kitchen | Swedish Chef | `/swedish-chef-cookoff` |
 
 Combine Superstars for ensemble screen tests. Max 4 per production unless user asks for "Factory wall."
@@ -106,7 +107,7 @@ Combine Superstars for ensemble screen tests. Max 4 per production unless user a
 When user says *cast all*, *full cast*, *assemble cast*, or *everyone*:
 
 1. Read `references/full-cast-assembly.md`
-2. Emit **WARHOL CAST ASSEMBLY OUT** (all CAST-01–26 + MASTER-01–05)
+2. Emit **WARHOL CAST ASSEMBLY OUT** (all CAST-01–27 + MASTER-01–05)
 3. Default pipeline: **video-creator P4** (CA-01) or **P6** if master ensemble also requested (CA-05)
 
 ---

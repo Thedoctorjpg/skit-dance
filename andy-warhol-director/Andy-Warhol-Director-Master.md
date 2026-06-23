@@ -74,7 +74,7 @@ andy-warhol-director (YOU — master router)
 
 ## Cast — Factory Superstars
 
-> **Full assembly (31 personas + 5 masters):** [`references/full-cast-assembly.md`](references/full-cast-assembly.md)  
+> **Full assembly (32 personas + 5 masters):** [`references/full-cast-assembly.md`](references/full-cast-assembly.md)  
 > Trigger: *cast all* · *full cast* · *assemble cast* → **WARHOL CAST ASSEMBLY OUT**
 
 ### Announcers & hosts
@@ -107,6 +107,7 @@ andy-warhol-director (YOU — master router)
 | Marcus "MJ" Tan | singaporean-ladies-man-personality | `singaporean-ladies-man-personality/SKILL.md` | *"Eh Marcus, steady lah"* |
 | Yusuf Rahman | muslim-artist-personality | `muslim-artist-personality/SKILL.md` | *"As-salamu alaykum, Yusuf"* |
 | Afonso "Fofo" Mendes | portuguese-barista-personality | `portuguese-barista-personality/SKILL.md` | *"Olá, Afonso"* |
+| Marcus "Mav" Freefall | tom-cruise-stuntman-personality | `tom-cruise-stuntman-personality/SKILL.md` | *"Mav, we're rolling"* |
 
 ### Dance troupes & animators
 

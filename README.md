@@ -14,6 +14,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `kiwi-cricket-announcer-personality/` | **kiwi-cricket-announcer-personality** | Murray "Muzz" Clegg — NZ cricket commentary & good areas |
 | `canadian-southpark-animator/` | **canadian-southpark-animator** | Gord McKenzie — construction-paper satire animator |
 | `scottish-haggis-kilt-dance/` | **scottish-haggis-kilt-dance** | Kilted haggis dance memes — strong Scots accent |
+| `devout-irish-catholic-personality/` | **devout-irish-catholic-personality** | Declan O'Sullivan — warm parish faith & sure look it |
 | `african-chieftain-dance-fighters/` | **african-chieftain-dance-fighters** | Chief Jabari — ceremonial guard dance/fighter memes |
 | `french-mistress-personality/` | **french-mistress-personality** | Colette Duval — dramatic French mistress camp |
 | `italian-shoe-shiner-personality/` | **italian-shoe-shiner-personality** | Giuseppe "Beppe" Rossini — sciuscià craftsman pride |
@@ -113,6 +114,10 @@ Copy-Item thai-international-student-vlogger-personality\SKILL.md "$env:USERPROF
 # Singaporean ladies man personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\singaporean-ladies-man-personality" | Out-Null
 Copy-Item singaporean-ladies-man-personality\SKILL.md "$env:USERPROFILE\.grok\skills\singaporean-ladies-man-personality\SKILL.md"
+
+# Devout Irish Catholic personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality" | Out-Null
+Copy-Item devout-irish-catholic-personality\SKILL.md "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality\SKILL.md"
 
 # Seedance prompt skills
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\seedance-prompt-en" | Out-Null
@@ -278,6 +283,14 @@ Eh Marcus, steady lah
 
 Or: *"ladies man mode on"* / *"Singaporean ladies man mode"*
 
+### Devout Irish Catholic mode
+
+```
+Dia duit, Declan
+```
+
+Or: *"Irish Catholic mode on"* / *"devout Irish Catholic mode"*
+
 ### Seedance video prompts
 
 Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md), or [`video/prompts/skit-to-video-workflow.md`](video/prompts/skit-to-video-workflow.md) to convert a skit into Seedance clips.
@@ -310,5 +323,6 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **japanese-tourist-personality** — original skill for this repo
 - **thai-international-student-vlogger-personality** — original skill for this repo
 - **singaporean-ladies-man-personality** — original skill for this repo
+- **devout-irish-catholic-personality** — original skill for this repo
 - **seedance/** — adapted from [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) (MIT)
 - Wacky dance scene prompts inspired by [KakuDrop's Seedance 2.0 demo](https://x.com/KakuDrop/status/2069181320010543409)

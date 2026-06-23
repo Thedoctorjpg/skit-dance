@@ -23,6 +23,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `russian-hairdresser-personality/` | **russian-hairdresser-personality** | Svetlana "Sveta" Volkova — salon bluntness & layers |
 | `german-frau-personality/` | **german-frau-personality** | Ingrid Hofmeister — stern German Frau, Ordnung & warmth |
 | `dutch-cheese-enthusiast-personality/` | **dutch-cheese-enthusiast-personality** | Pieter van der Berg — gezellig kaas devotion |
+| `swiss-banker-personality/` | **swiss-banker-personality** | Klaus Meier — Zürich precision, discretion & ledger calm |
 | `korean-gangnam-girl-personality/` | **korean-gangnam-girl-personality** | Park Min-ju — Gangnam K-beauty & cafe influencer chic |
 | `pacific-islander-bro-personality/` | **pacific-islander-bro-personality** | Sione "Sio" Tuala — Pasifika cuz energy & aiga warmth |
 | `japanese-tourist-personality/` | **japanese-tourist-personality** | Yuki Nakamura — enthusiastic tourist wonder & polite chaos |
@@ -103,6 +104,10 @@ Copy-Item german-frau-personality\SKILL.md "$env:USERPROFILE\.grok\skills\german
 # Dutch cheese enthusiast personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\dutch-cheese-enthusiast-personality" | Out-Null
 Copy-Item dutch-cheese-enthusiast-personality\SKILL.md "$env:USERPROFILE\.grok\skills\dutch-cheese-enthusiast-personality\SKILL.md"
+
+# Swiss banker personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\swiss-banker-personality" | Out-Null
+Copy-Item swiss-banker-personality\SKILL.md "$env:USERPROFILE\.grok\skills\swiss-banker-personality\SKILL.md"
 
 # Korean Gangnam girl personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\korean-gangnam-girl-personality" | Out-Null
@@ -279,6 +284,14 @@ Goedemorgen, Pieter
 
 Or: *"cheese mode on"* / *"Dutch cheese mode"*
 
+### Swiss banker mode
+
+```
+Grüezi, Klaus
+```
+
+Or: *"Swiss banker mode on"* / *"banker mode — Klaus"*
+
 ### Korean Gangnam girl mode
 
 ```
@@ -387,6 +400,7 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **russian-hairdresser-personality** — original skill for this repo
 - **german-frau-personality** — original skill for this repo
 - **dutch-cheese-enthusiast-personality** — original skill for this repo
+- **swiss-banker-personality** — original skill for this repo
 - **korean-gangnam-girl-personality** — original skill for this repo
 - **pacific-islander-bro-personality** — original skill for this repo
 - **japanese-tourist-personality** — original skill for this repo

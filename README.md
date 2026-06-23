@@ -10,7 +10,8 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `dr-seuss-script-writer/` | **dr-seuss-script-writer** | Ted Rhymewell — rhyming Seuss-style scripts; Warhol prompt handoff partner |
 | `stephen-spielberg-producer/` | **stephen-spielberg-producer** | Steve Reelwright — blockbuster producer; Warhol & Seuss triple handoff |
 | `le-corbusier-set-designer/` | **le-corbusier-set-designer** | Le Corbu Modulier — modernist set designer; Warhol, Spielberg & Seuss quartet handoff |
-| `eddie-vedder-musician/` | **eddie-vedder-musician** | Eddie Stonevoice — grunge-folk soundtrack; master ensemble handoff with all masters |
+| `eddie-vedder-musician/` | **eddie-vedder-musician** | Eddie Stonevoice — grunge-folk soundtrack; grand master ensemble handoff |
+| `tom-cruise-stuntman-personality/` | **tom-cruise-stuntman-personality** | Marcus "Mav" Freefall — practical stunt coordinator; grand master ensemble handoff |
 | `adhdloganberry-feed/` | **adhdloganberry-feed** | [@ADHDloganberry](https://x.com/ADHDloganberry) X video feed — export & API post |
 | `video-creator/` | **video-creator** | End-to-end video: Fugu orchestration + Imagine/Seedance + Voxtral + FFmpeg |
 | `video-creator/pipelines/` | — | Sakana Fugu ready-made pipeline prompts (P1–P6) |
@@ -41,7 +42,6 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `south-american-padel-enthusiast-personality/` | **south-american-padel-enthusiast-personality** | Diego Morales — pádel passion, dale & volea metaphors |
 | `singaporean-ladies-man-personality/` | **singaporean-ladies-man-personality** | Marcus "MJ" Tan — Singlish smooth charm & steady lah |
 | `portuguese-barista-personality/` | **portuguese-barista-personality** | Afonso "Fofo" Mendes — Lisbon barista bica devotion & pastelaria warmth |
-| `tom-cruise-stuntman-personality/` | **tom-cruise-stuntman-personality** | Marcus "Mav" Freefall — practical stunt takes & one-shot action energy |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `skits/` | — | Example production-ready dancing skit scripts |
 | `memes/` | — | Short dance meme caption packs (Scottish, chieftain guard, Chinese festival) |
@@ -70,9 +70,13 @@ Copy-Item -Recurse stephen-spielberg-producer\* "$env:USERPROFILE\.grok\skills\s
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\le-corbusier-set-designer" | Out-Null
 Copy-Item -Recurse le-corbusier-set-designer\* "$env:USERPROFILE\.grok\skills\le-corbusier-set-designer\"
 
-# Eddie Vedder musician — soundtrack & vocals (master ensemble)
+# Eddie Vedder musician — soundtrack & vocals (grand master ensemble)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\eddie-vedder-musician" | Out-Null
 Copy-Item -Recurse eddie-vedder-musician\* "$env:USERPROFILE\.grok\skills\eddie-vedder-musician\"
+
+# Tom Cruise stuntman — practical stunt coordinator (grand master ensemble)
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\tom-cruise-stuntman-personality" | Out-Null
+Copy-Item -Recurse tom-cruise-stuntman-personality\* "$env:USERPROFILE\.grok\skills\tom-cruise-stuntman-personality\"
 
 # ADHDloganberry X video feed
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\adhdloganberry-feed" | Out-Null
@@ -171,10 +175,6 @@ Copy-Item singaporean-ladies-man-personality\SKILL.md "$env:USERPROFILE\.grok\sk
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\portuguese-barista-personality" | Out-Null
 Copy-Item portuguese-barista-personality\SKILL.md "$env:USERPROFILE\.grok\skills\portuguese-barista-personality\SKILL.md"
 
-# Tom Cruise stuntman personality skill
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\tom-cruise-stuntman-personality" | Out-Null
-Copy-Item tom-cruise-stuntman-personality\SKILL.md "$env:USERPROFILE\.grok\skills\tom-cruise-stuntman-personality\SKILL.md"
-
 # Devout Irish Catholic personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality" | Out-Null
 Copy-Item devout-irish-catholic-personality\SKILL.md "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality\SKILL.md"
@@ -212,7 +212,7 @@ Copy-Item seedance\zh\SKILL.md "$env:USERPROFILE\.grok\skills\seedance-prompt-zh
 
 Or: *"Factory mode"*, *"screen test"*, *"Warhol director"*
 
-**Full cast assembly (all 32 personality skills):**
+**Full cast assembly (31 cast personas + 6 masters):**
 
 ```
 /andy-warhol-director cast all — Factory wall, everyone dances the same beat 4×
@@ -222,16 +222,25 @@ Roster: [`andy-warhol-director/references/full-cast-assembly.md`](andy-warhol-di
 
 Master index linking every skill: [`andy-warhol-director/Andy-Warhol-Director-Master.md`](andy-warhol-director/Andy-Warhol-Director-Master.md)
 
-### Eddie Vedder musician + master ensemble (all five)
+### Grand master ensemble (all six)
+
+```
+/tom-cruise-stuntman-personality + /eddie-vedder-musician + /le-corbusier-set-designer + /stephen-spielberg-producer + /andy-warhol-director + /dr-seuss-script-writer
+Stunt Call: practical one-take rhyming brutalist supermarket dance — full grand master ensemble
+```
+
+Or: *"grand master ensemble"*, *"master ensemble"*, *"all six"*, *"Mav mode"*, *"stunt coordinator"*
+
+Grand master handoff: [`eddie-vedder-musician/references/master-ensemble-handoff-protocol.md`](eddie-vedder-musician/references/master-ensemble-handoff-protocol.md)
+
+### Eddie Vedder musician (quintet — no stunts)
 
 ```
 /eddie-vedder-musician + /le-corbusier-set-designer + /stephen-spielberg-producer + /andy-warhol-director + /dr-seuss-script-writer
-Session: grunge-folk score for rhyming brutalist supermarket dance — full master ensemble
+Session: grunge-folk score for rhyming brutalist supermarket dance — all five, no stunts
 ```
 
-Or: *"Eddie Vedder musician"*, *"Eddie Vetter"* (common misspelling), *"Vedder soundtrack"*, *"master ensemble"*, *"all five"*
-
-Master ensemble handoff: [`eddie-vedder-musician/references/master-ensemble-handoff-protocol.md`](eddie-vedder-musician/references/master-ensemble-handoff-protocol.md)
+Or: *"Eddie Vedder musician"*, *"Eddie Vetter"* (common misspelling), *"Vedder soundtrack"*, *"all five"*
 
 ```
 /eddie-vedder-musician original baritone hook for a Factory screen test dance skit
@@ -595,7 +604,7 @@ Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over"*, *"
 - **thai-international-student-vlogger-personality** — original skill for this repo
 - **singaporean-ladies-man-personality** — original skill for this repo
 - **portuguese-barista-personality** — original skill for this repo
-- **tom-cruise-stuntman-personality** — original skill for this repo (homage persona; not affiliated with Tom Cruise)
+- **tom-cruise-stuntman-personality** — MASTER-06 stunt coordinator; grand master ensemble handoff (homage persona; not affiliated with Tom Cruise)
 - **devout-irish-catholic-personality** — original skill for this repo
 - **muslim-artist-personality** — original skill for this repo
 - **filipina-tiktok-personality** — original skill for this repo

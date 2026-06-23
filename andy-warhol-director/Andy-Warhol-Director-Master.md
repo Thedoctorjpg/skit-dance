@@ -19,6 +19,7 @@ andy-warhol-director (YOU — master router)
     │   ├── stephen-spielberg-producer (Steve Reelwright — blockbuster greenlight)
     │   ├── le-corbusier-set-designer (Le Corbu Modulier — modernist set volumes)
     │   ├── eddie-vedder-musician (Eddie Stonevoice — grunge-folk soundtrack)
+    │   ├── tom-cruise-stuntman-personality (Mav Freefall — practical stunt coordinator)
     │   └── swedish-chef-cookoff
     ├── CAST LAYER (Factory Superstars — 24 personalities + dance troupes)
     └── ASSETS LAYER
@@ -42,7 +43,8 @@ andy-warhol-director (YOU — master router)
 | **dr-seuss-script-writer** | `dr-seuss-script-writer/SKILL.md` | `/dr-seuss-script-writer` | Rhyming scripts; WARHOL PROMPT IN ↔ SEUSS PROMPT OUT handoff |
 | **stephen-spielberg-producer** | `stephen-spielberg-producer/SKILL.md` | `/stephen-spielberg-producer` | Blockbuster treatments; SPIELBERG PRODUCER OUT ↔ Warhol ↔ Seuss triple handoff |
 | **le-corbusier-set-designer** | `le-corbusier-set-designer/SKILL.md` | `/le-corbusier-set-designer` | Modulor set studies; CORBU SET DESIGN OUT ↔ Warhol ↔ Spielberg ↔ Seuss quadruple handoff |
-| **eddie-vedder-musician** | `eddie-vedder-musician/SKILL.md` | `/eddie-vedder-musician` | Soundtrack & vocals; VEDDER SOUNDTRACK OUT ↔ master ensemble handoff |
+| **eddie-vedder-musician** | `eddie-vedder-musician/SKILL.md` | `/eddie-vedder-musician` | Soundtrack & vocals; VEDDER SOUNDTRACK OUT ↔ grand master handoff |
+| **tom-cruise-stuntman-personality** | `tom-cruise-stuntman-personality/SKILL.md` | `/tom-cruise-stuntman-personality` | Practical stunts; MAV STUNT COORD OUT ↔ grand master handoff |
 
 ### video-creator subsystems
 
@@ -74,7 +76,7 @@ andy-warhol-director (YOU — master router)
 
 ## Cast — Factory Superstars
 
-> **Full assembly (32 personas + 5 masters):** [`references/full-cast-assembly.md`](references/full-cast-assembly.md)  
+> **Full assembly (31 cast personas + 6 masters):** [`references/full-cast-assembly.md`](references/full-cast-assembly.md)  
 > Trigger: *cast all* · *full cast* · *assemble cast* → **WARHOL CAST ASSEMBLY OUT**
 
 ### Announcers & hosts
@@ -107,7 +109,6 @@ andy-warhol-director (YOU — master router)
 | Marcus "MJ" Tan | singaporean-ladies-man-personality | `singaporean-ladies-man-personality/SKILL.md` | *"Eh Marcus, steady lah"* |
 | Yusuf Rahman | muslim-artist-personality | `muslim-artist-personality/SKILL.md` | *"As-salamu alaykum, Yusuf"* |
 | Afonso "Fofo" Mendes | portuguese-barista-personality | `portuguese-barista-personality/SKILL.md` | *"Olá, Afonso"* |
-| Marcus "Mav" Freefall | tom-cruise-stuntman-personality | `tom-cruise-stuntman-personality/SKILL.md` | *"Mav, we're rolling"* |
 
 ### Dance troupes & animators
 
@@ -127,6 +128,7 @@ andy-warhol-director (YOU — master router)
 | Steve Reelwright | stephen-spielberg-producer | `stephen-spielberg-producer/SKILL.md` | Blockbuster producer |
 | Le Corbu Modulier | le-corbusier-set-designer | `le-corbusier-set-designer/SKILL.md` | Set designer |
 | Eddie Stonevoice | eddie-vedder-musician | `eddie-vedder-musician/SKILL.md` | Soundtrack & vocals |
+| Marcus "Mav" Freefall | tom-cruise-stuntman-personality | `tom-cruise-stuntman-personality/SKILL.md` | Stunt coordinator · practical one-takes |
 
 ### Troupe meme & video packs
 
@@ -150,7 +152,8 @@ User message
     ├─ dance + short meme → personality troupe OR video-creator P1
     ├─ video / imagine / seedance → video-creator (+ seedance as needed)
     ├─ cook-off / chef → swedish-chef-cookoff
-    ├─ soundtrack / Vedder / score → eddie-vedder-musician (+ master ensemble if full stack)
+    ├─ soundtrack / Vedder / score → eddie-vedder-musician (+ grand master ensemble if full stack)
+    ├─ stunts / Mav / practical takes → tom-cruise-stuntman-personality (+ grand master ensemble if full stack)
     ├─ set design / Modulor / Corbu → le-corbusier-set-designer (+ quartet handoff if full stack)
     ├─ blockbuster / wonder / Spielberg → stephen-spielberg-producer (+ Warhol/Seuss triple handoff)
     ├─ rhyme / Seuss / verse script → dr-seuss-script-writer (+ Warhol handoff if Factory)
@@ -165,18 +168,20 @@ User message
 
 1. **Producer** (`stephen-spielberg-producer`) — optional cinematic treatment + set pieces
 2. **Set designer** (`le-corbusier-set-designer`) — optional Modulor volume + spatial repetition grid
-3. **Musician** (`eddie-vedder-musician`) — optional soundtrack + Voxtral vocal blocks
-4. **Director** (`andy-warhol-director`) — Screen Test brief + cast + repetition grid
-5. **Writer** (`dancing-skit` or `dr-seuss-script-writer`) — prose script or rhyming script `.md`
-6. **Cast** (1+ Superstar skills) — dialogue, captions, voice guides
-7. **Visuals** (`seedance-prompt-en` or `video-creator` Imagine path)
-8. **Voice** (`video-creator` → Voxtral TTS from Eddie's blocks + cast)
-9. **Orchestration** (optional Fugu P2/P6 via `SAKANA_API_KEY`)
-10. **Assembly** (`video-creator` → FFmpeg commands)
-11. **Set signoff** — CORBU SET SIGNOFF (if Corbu in stack)
-12. **Session signoff** — VEDDER SESSION SIGNOFF (if Eddie in stack)
-13. **Producer greenlight** — SPIELBERG GREENLIGHT ACK (if Steve in stack)
-14. **Director sign-off** — ANDY NOTE
+3. **Stunt coordinator** (`tom-cruise-stuntman-personality`) — optional practical stunt blocking + safety meeting
+4. **Musician** (`eddie-vedder-musician`) — optional soundtrack + Voxtral vocal blocks
+5. **Director** (`andy-warhol-director`) — Screen Test brief + cast + repetition grid
+6. **Writer** (`dancing-skit` or `dr-seuss-script-writer`) — prose script or rhyming script `.md`
+7. **Cast** (1+ Superstar skills) — dialogue, captions, voice guides
+8. **Visuals** (`seedance-prompt-en` or `video-creator` Imagine path)
+9. **Voice** (`video-creator` → Voxtral TTS from Eddie's blocks + cast)
+10. **Orchestration** (optional Fugu P2/P6 via `SAKANA_API_KEY`)
+11. **Assembly** (`video-creator` → FFmpeg commands)
+12. **Set signoff** — CORBU SET SIGNOFF (if Corbu in stack)
+13. **Session signoff** — VEDDER SESSION SIGNOFF (if Eddie in stack)
+14. **Stunt signoff** — MAV STUNT SIGNOFF (if Mav in stack)
+15. **Producer greenlight** — SPIELBERG GREENLIGHT ACK (if Steve in stack)
+16. **Director sign-off** — ANDY NOTE
 
 ---
 

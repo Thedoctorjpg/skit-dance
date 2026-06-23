@@ -6,6 +6,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 
 | Path | Skill | Description |
 |------|-------|-------------|
+| `andy-warhol-director/` | **andy-warhol-director** | **Master director** — Factory persona routing all skills ([Master index](andy-warhol-director/Andy-Warhol-Director-Master.md)) |
 | `video-creator/` | **video-creator** | End-to-end video: Fugu orchestration + Imagine/Seedance + Voxtral + FFmpeg |
 | `video-creator/pipelines/` | — | Sakana Fugu ready-made pipeline prompts (P1–P6) |
 | `SKILL.md` + `references/` | **dancing-skit** | Monty Python-style dance skit scripts |
@@ -45,6 +46,10 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 ```powershell
 git clone https://github.com/Thedoctorjpg/skit-dance.git
 cd skit-dance
+
+# Andy Warhol Director — master router (install first)
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\andy-warhol-director" | Out-Null
+Copy-Item -Recurse andy-warhol-director\* "$env:USERPROFILE\.grok\skills\andy-warhol-director\"
 
 # Video creator skill (Imagine + Seedance + Voxtral + FFmpeg)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\video-creator" | Out-Null
@@ -163,6 +168,16 @@ Copy-Item seedance\zh\SKILL.md "$env:USERPROFILE\.grok\skills\seedance-prompt-zh
 ```
 
 ## Usage
+
+### Andy Warhol Director (master)
+
+```
+/andy-warhol-director cast Muzz narrating Chinese festival dancers at IKEA — silver wall 4×
+```
+
+Or: *"Factory mode"*, *"screen test"*, *"Warhol director"*
+
+Master index linking every skill: [`andy-warhol-director/Andy-Warhol-Director-Master.md`](andy-warhol-director/Andy-Warhol-Director-Master.md)
 
 ### Dancing skit
 
@@ -411,6 +426,7 @@ Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over"*, *"
 
 ## Credits
 
+- **andy-warhol-director** — master router persona; Factory homage (not affiliated with AWF/estate)
 - **video-creator** — original skill; [Sakana Fugu](https://sakana.ai/fugu) orchestration; Voxtral via [Julia Turc](https://x.com/juliarturc/status/2069096367155507257) / [Mistral](https://mistral.ai/news/voxtral/)
 - **dancing-skit** — original skill for this repo
 - **swedish-chef-cookoff** — original skill for this repo (Muppet Show parody; not affiliated with Disney/Muppets)

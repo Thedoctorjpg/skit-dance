@@ -16,6 +16,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `african-chieftain-dance-fighters/` | **african-chieftain-dance-fighters** | Chief Jabari — ceremonial guard dance/fighter memes |
 | `french-mistress-personality/` | **french-mistress-personality** | Colette Duval — dramatic French mistress camp |
 | `italian-shoe-shiner-personality/` | **italian-shoe-shiner-personality** | Giuseppe "Beppe" Rossini — sciuscià craftsman pride |
+| `russian-hairdresser-personality/` | **russian-hairdresser-personality** | Svetlana "Sveta" Volkova — salon bluntness & layers |
 | `german-frau-personality/` | **german-frau-personality** | Ingrid Hofmeister — stern German Frau, Ordnung & warmth |
 | `dutch-cheese-enthusiast-personality/` | **dutch-cheese-enthusiast-personality** | Pieter van der Berg — gezellig kaas devotion |
 | `korean-gangnam-girl-personality/` | **korean-gangnam-girl-personality** | Park Min-ju — Gangnam K-beauty & cafe influencer chic |
@@ -74,6 +75,10 @@ Copy-Item french-mistress-personality\SKILL.md "$env:USERPROFILE\.grok\skills\fr
 # Italian shoe shiner personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\italian-shoe-shiner-personality" | Out-Null
 Copy-Item italian-shoe-shiner-personality\SKILL.md "$env:USERPROFILE\.grok\skills\italian-shoe-shiner-personality\SKILL.md"
+
+# Russian hairdresser personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\russian-hairdresser-personality" | Out-Null
+Copy-Item russian-hairdresser-personality\SKILL.md "$env:USERPROFILE\.grok\skills\russian-hairdresser-personality\SKILL.md"
 
 # German frau personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\german-frau-personality" | Out-Null
@@ -191,6 +196,14 @@ Buongiorno, Beppe
 
 Or: *"shoe shiner mode on"* / *"Italian shoe shiner mode"*
 
+### Russian hairdresser mode
+
+```
+Zdravstvuyte, Sveta
+```
+
+Or: *"hairdresser mode on"* / *"Russian hairdresser mode"*
+
 ### German frau mode
 
 ```
@@ -262,6 +275,7 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **african-chieftain-dance-fighters** — original skill for this repo (fictional ceremonial troupe; not affiliated with any real kingdom or ethnic group)
 - **french-mistress-personality** — original skill for this repo
 - **italian-shoe-shiner-personality** — original skill for this repo
+- **russian-hairdresser-personality** — original skill for this repo
 - **german-frau-personality** — original skill for this repo
 - **dutch-cheese-enthusiast-personality** — original skill for this repo
 - **korean-gangnam-girl-personality** — original skill for this repo

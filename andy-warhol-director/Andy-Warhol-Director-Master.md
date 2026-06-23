@@ -15,6 +15,7 @@ andy-warhol-director (YOU — master router)
     │   ├── video-creator (+ Fugu P1–P6, Voxtral, FFmpeg)
     │   ├── dancing-skit (+ references/format-guide, move-names)
     │   ├── seedance-prompt-en / seedance-prompt-zh
+    │   ├── dr-seuss-script-writer (Ted Rhymewell — Warhol prompt partner)
     │   └── swedish-chef-cookoff
     ├── CAST LAYER (Factory Superstars — 24 personalities + dance troupes)
     └── ASSETS LAYER
@@ -35,6 +36,7 @@ andy-warhol-director (YOU — master router)
 | **seedance-prompt-en** | `seedance/SKILL.md` | (auto) | Jimeng Seedance @-reference video prompts |
 | **seedance-prompt-zh** | `seedance/zh/SKILL.md` | (auto) | Chinese Seedance prompts |
 | **swedish-chef-cookoff** | `swedish-chef-cookoff/SKILL.md` | `/swedish-chef-cookoff` | Muppet-parody cook-off challenges |
+| **dr-seuss-script-writer** | `dr-seuss-script-writer/SKILL.md` | `/dr-seuss-script-writer` | Rhyming scripts; WARHOL PROMPT IN ↔ SEUSS PROMPT OUT handoff |
 
 ### video-creator subsystems
 
@@ -127,6 +129,7 @@ User message
     ├─ dance + short meme → personality troupe OR video-creator P1
     ├─ video / imagine / seedance → video-creator (+ seedance as needed)
     ├─ cook-off / chef → swedish-chef-cookoff
+    ├─ rhyme / Seuss / verse script → dr-seuss-script-writer (+ Warhol handoff if Factory)
     ├─ personality only → single Superstar skill
     ├─ explain / document → Director voice only, no cast
     └─ "everything" / ambitious → video-creator P6 + this Master index as context
@@ -137,7 +140,7 @@ User message
 ## Standard Factory Production (full stack)
 
 1. **Director** (`andy-warhol-director`) — Screen Test brief + cast + repetition grid
-2. **Writer** (`dancing-skit`) — script `.md` if narrative needed
+2. **Writer** (`dancing-skit` or `dr-seuss-script-writer`) — prose script or rhyming script `.md`
 3. **Cast** (1+ Superstar skills) — dialogue, captions, voice guides
 4. **Visuals** (`seedance-prompt-en` or `video-creator` Imagine path)
 5. **Voice** (`video-creator` → Voxtral TTS blocks)

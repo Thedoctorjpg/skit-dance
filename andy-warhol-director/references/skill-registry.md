@@ -13,6 +13,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | PROD-03 | seedance-en | `seedance/SKILL.md` |
 | PROD-04 | seedance-zh | `seedance/zh/SKILL.md` |
 | PROD-05 | swedish-chef-cookoff | `/swedish-chef-cookoff` |
+| PROD-06 | dr-seuss-script-writer | `/dr-seuss-script-writer` · `dr-seuss-script-writer/SKILL.md` |
 
 ## Fugu Pipelines (via PROD-02)
 
@@ -77,6 +78,12 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | **Kitchen Screen Test** | swedish-chef-cookoff + canadian-southpark-animator (storyboard) |
 | **Global Ensemble** | andy-warhol-director + 4 CAST-* + video-creator P4 |
 | **Full Factory** | andy-warhol-director + video-creator P6 + Andy-Warhol-Director-Master.md as context |
+| **WS-01 Rhyming skit** | andy-warhol-director → dr-seuss-script-writer → video-creator P2 |
+| **WS-02 Rhyme meme wall** | dr-seuss-script-writer (quatrain) → andy-warhol-director → video-creator P1 |
+| **WS-03 Rhyme + cast VO** | dr-seuss-script-writer + CAST-* → andy-warhol-director → video-creator P4 |
+| **WS-04 Rhyme autonomous** | dr-seuss-script-writer + andy-warhol-director → video-creator P6 (both prompt blocks) |
+
+Handoff protocol: `dr-seuss-script-writer/references/warhol-handoff-protocol.md`
 
 ---
 
@@ -90,3 +97,5 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | chef / cook-off / muppet | PROD-05 |
 | [personality name] | matching CAST-* |
 | list skills / cast | Andy-Warhol-Director-Master.md |
+| rhyme / seuss / write in verse | PROD-06 (+ andy-warhol-director for Factory) |
+| warhol + seuss / both | andy-warhol-director + PROD-06 (handoff protocol) |

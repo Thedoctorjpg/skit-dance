@@ -7,6 +7,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | Path | Skill | Description |
 |------|-------|-------------|
 | `andy-warhol-director/` | **andy-warhol-director** | **Master director** — Factory persona routing all skills ([Master index](andy-warhol-director/Andy-Warhol-Director-Master.md)) |
+| `dr-seuss-script-writer/` | **dr-seuss-script-writer** | Ted Rhymewell — rhyming Seuss-style scripts; Warhol prompt handoff partner |
 | `video-creator/` | **video-creator** | End-to-end video: Fugu orchestration + Imagine/Seedance + Voxtral + FFmpeg |
 | `video-creator/pipelines/` | — | Sakana Fugu ready-made pipeline prompts (P1–P6) |
 | `SKILL.md` + `references/` | **dancing-skit** | Monty Python-style dance skit scripts |
@@ -50,6 +51,10 @@ cd skit-dance
 # Andy Warhol Director — master router (install first)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\andy-warhol-director" | Out-Null
 Copy-Item -Recurse andy-warhol-director\* "$env:USERPROFILE\.grok\skills\andy-warhol-director\"
+
+# Dr. Seuss script writer — rhyming Factory writer (pairs with Warhol)
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\dr-seuss-script-writer" | Out-Null
+Copy-Item -Recurse dr-seuss-script-writer\* "$env:USERPROFILE\.grok\skills\dr-seuss-script-writer\"
 
 # Video creator skill (Imagine + Seedance + Voxtral + FFmpeg)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\video-creator" | Out-Null
@@ -178,6 +183,21 @@ Copy-Item seedance\zh\SKILL.md "$env:USERPROFILE\.grok\skills\seedance-prompt-zh
 Or: *"Factory mode"*, *"screen test"*, *"Warhol director"*
 
 Master index linking every skill: [`andy-warhol-director/Andy-Warhol-Director-Master.md`](andy-warhol-director/Andy-Warhol-Director-Master.md)
+
+### Dr. Seuss script writer + Warhol combo
+
+```
+/andy-warhol-director + /dr-seuss-script-writer
+Screen test: Kiwi announcer rhymes about padel dancers in a cheese shop
+```
+
+Or: *"write it in rhyme"*, *"Seuss-style skit"*, *"Warhol and Seuss"*
+
+Handoff protocol: [`dr-seuss-script-writer/references/warhol-handoff-protocol.md`](dr-seuss-script-writer/references/warhol-handoff-protocol.md)
+
+```
+/dr-seuss-script-writer rhyming dance skit about haggis at airport security
+```
 
 ### Dancing skit
 
@@ -427,6 +447,7 @@ Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over"*, *"
 ## Credits
 
 - **andy-warhol-director** — master router persona; Factory homage (not affiliated with AWF/estate)
+- **dr-seuss-script-writer** — Ted Rhymewell rhyming writer; Seuss-style homage (not affiliated with Seuss Enterprises)
 - **video-creator** — original skill; [Sakana Fugu](https://sakana.ai/fugu) orchestration; Voxtral via [Julia Turc](https://x.com/juliarturc/status/2069096367155507257) / [Mistral](https://mistral.ai/news/voxtral/)
 - **dancing-skit** — original skill for this repo
 - **swedish-chef-cookoff** — original skill for this repo (Muppet Show parody; not affiliated with Disney/Muppets)

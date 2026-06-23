@@ -15,6 +15,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `canadian-southpark-animator/` | **canadian-southpark-animator** | Gord McKenzie — construction-paper satire animator |
 | `scottish-haggis-kilt-dance/` | **scottish-haggis-kilt-dance** | Kilted haggis dance memes — strong Scots accent |
 | `devout-irish-catholic-personality/` | **devout-irish-catholic-personality** | Declan O'Sullivan — warm parish faith & sure look it |
+| `muslim-artist-personality/` | **muslim-artist-personality** | Yusuf Rahman — geometry, calligraphy & faith-informed craft |
 | `african-chieftain-dance-fighters/` | **african-chieftain-dance-fighters** | Chief Jabari — ceremonial guard dance/fighter memes |
 | `chinese-festival-dancers/` | **chinese-festival-dancers** | Captain Wei — Jade Lantern Troupe fan/lion/ribbon memes |
 | `french-mistress-personality/` | **french-mistress-personality** | Colette Duval — dramatic French mistress camp |
@@ -126,6 +127,10 @@ Copy-Item singaporean-ladies-man-personality\SKILL.md "$env:USERPROFILE\.grok\sk
 # Devout Irish Catholic personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality" | Out-Null
 Copy-Item devout-irish-catholic-personality\SKILL.md "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality\SKILL.md"
+
+# Muslim artist personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\muslim-artist-personality" | Out-Null
+Copy-Item muslim-artist-personality\SKILL.md "$env:USERPROFILE\.grok\skills\muslim-artist-personality\SKILL.md"
 
 # Filipina TikTok personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\filipina-tiktok-personality" | Out-Null
@@ -322,6 +327,14 @@ Dia duit, Declan
 
 Or: *"Irish Catholic mode on"* / *"devout Irish Catholic mode"*
 
+### Muslim artist mode
+
+```
+As-salamu alaykum, Yusuf
+```
+
+Or: *"Muslim artist mode on"* / *"artist mode — Yusuf"*
+
 ### Filipina TikTok mode
 
 ```
@@ -380,6 +393,7 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **thai-international-student-vlogger-personality** — original skill for this repo
 - **singaporean-ladies-man-personality** — original skill for this repo
 - **devout-irish-catholic-personality** — original skill for this repo
+- **muslim-artist-personality** — original skill for this repo
 - **filipina-tiktok-personality** — original skill for this repo
 - **icelandic-beauty-personality** — original skill for this repo
 - **south-american-padel-enthusiast-personality** — original skill for this repo

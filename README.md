@@ -14,6 +14,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `scottish-haggis-kilt-dance/` | **scottish-haggis-kilt-dance** | Kilted haggis dance memes — strong Scots accent |
 | `french-mistress-personality/` | **french-mistress-personality** | Colette Duval — dramatic French mistress camp |
 | `german-frau-personality/` | **german-frau-personality** | Ingrid Hofmeister — stern German Frau, Ordnung & warmth |
+| `japanese-tourist-personality/` | **japanese-tourist-personality** | Yuki Nakamura — enthusiastic tourist wonder & polite chaos |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `skits/` | — | Example production-ready dancing skit scripts |
 | `memes/` | — | Short dance meme caption packs (Scottish kilt/haggis) |
@@ -58,6 +59,10 @@ Copy-Item french-mistress-personality\SKILL.md "$env:USERPROFILE\.grok\skills\fr
 # German frau personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\german-frau-personality" | Out-Null
 Copy-Item german-frau-personality\SKILL.md "$env:USERPROFILE\.grok\skills\german-frau-personality\SKILL.md"
+
+# Japanese tourist personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\japanese-tourist-personality" | Out-Null
+Copy-Item japanese-tourist-personality\SKILL.md "$env:USERPROFILE\.grok\skills\japanese-tourist-personality\SKILL.md"
 
 # Seedance prompt skills
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\seedance-prompt-en" | Out-Null
@@ -132,6 +137,14 @@ Guten Tag, Ingrid
 
 Or: *"Frau mode on"* / *"German frau mode"*
 
+### Japanese tourist mode
+
+```
+Konnichiwa, Yuki
+```
+
+Or: *"tourist mode on"* / *"Japanese tourist mode"*
+
 ### Seedance video prompts
 
 Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md), or [`video/prompts/skit-to-video-workflow.md`](video/prompts/skit-to-video-workflow.md) to convert a skit into Seedance clips.
@@ -153,5 +166,6 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **scottish-haggis-kilt-dance** — original skill for this repo
 - **french-mistress-personality** — original skill for this repo
 - **german-frau-personality** — original skill for this repo
+- **japanese-tourist-personality** — original skill for this repo
 - **seedance/** — adapted from [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) (MIT)
 - Wacky dance scene prompts inspired by [KakuDrop's Seedance 2.0 demo](https://x.com/KakuDrop/status/2069181320010543409)

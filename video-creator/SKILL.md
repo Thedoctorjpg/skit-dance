@@ -6,8 +6,8 @@ description: >
   audio with FFmpeg, and deliver a production brief. Trigger when the user asks for video creator,
   imagine-video, make a video, video production pipeline, voice-over for video, narrated skit video,
   Voxtral voice, Sakana Fugu orchestration, or combines script + dance + narration into a finished
-  clip. Also trigger for /video-creator, /imagine-video, and Fugu pipeline requests. Do NOT use
-  for static images only or professional broadcast mastering.
+  clip. Also trigger for /video-creator, /imagine-video, Fugu pipeline requests, or @ADHDloganberry
+  X feed (adhdloganberry-feed). Do NOT use for static images only or professional broadcast mastering.
 ---
 
 # Video Creator Skill
@@ -213,7 +213,18 @@ See `references/audio-mux-ffmpeg.md` for exact commands.
 
 ---
 
-## Step 6: Deliverables
+## Step 6: X Feed Export (optional — @ADHDloganberry)
+
+When user mentions `ADHDloganberry`, `post to X`, `Twitter feed`, or `https://x.com/ADHDloganberry`:
+
+1. Load `../adhdloganberry-feed/SKILL.md`
+2. After FFmpeg assembly, run `adhdloganberry-feed/scripts/export-for-x.ps1`
+3. Write `caption.txt` per `adhdloganberry-feed/feed-config.md`
+4. Emit **FEED POST OUT** block; publish with `post-to-x.py` (or `FEED_DRY_RUN=1`)
+
+---
+
+## Step 7: Deliverables
 
 Write a production brief `.md` to the user's working directory:
 
@@ -269,6 +280,7 @@ TTS `Text` field uses phonetic/dialogue from the guide; `Voice` field describes 
 - `references/audio-mux-ffmpeg.md` — Concat, mux, ducking commands
 - `../video/prompts/skit-to-video-workflow.md` — Skit → Seedance conversion
 - `../seedance/SKILL.md` — Seedance @ reference syntax
+- `../adhdloganberry-feed/SKILL.md` — @ADHDloganberry X video feed export & post
 
 ## External References
 

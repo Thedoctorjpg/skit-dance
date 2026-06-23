@@ -17,6 +17,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | PROD-07 | stephen-spielberg-producer | `/stephen-spielberg-producer` · `stephen-spielberg-producer/SKILL.md` |
 | PROD-08 | le-corbusier-set-designer | `/le-corbusier-set-designer` · `le-corbusier-set-designer/SKILL.md` |
 | PROD-09 | eddie-vedder-musician | `/eddie-vedder-musician` · `eddie-vedder-musician/SKILL.md` |
+| PROD-10 | adhdloganberry-feed | `/adhdloganberry-feed` · `adhdloganberry-feed/SKILL.md` |
 
 ## Fugu Pipelines (via PROD-02)
 
@@ -142,4 +143,5 @@ Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md
 | all four / brutalist + wonder + rhyme | PROD-08 + PROD-07 + andy-warhol-director + PROD-06 (quadruple handoff) |
 | vedder / vetter / eddie / soundtrack / score | PROD-09 (+ other masters for ME-01) |
 | master ensemble / all five / full stack | PROD-06–09 + andy-warhol-director (master-ensemble handoff) |
+| ADHDloganberry / post to X / twitter feed | PROD-10 (+ PROD-02 video-creator) |
 | cast all / full cast / assemble cast / factory wall everyone | `references/full-cast-assembly.md` → CA-01 |

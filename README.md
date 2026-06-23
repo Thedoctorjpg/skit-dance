@@ -11,6 +11,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `stephen-spielberg-producer/` | **stephen-spielberg-producer** | Steve Reelwright — blockbuster producer; Warhol & Seuss triple handoff |
 | `le-corbusier-set-designer/` | **le-corbusier-set-designer** | Le Corbu Modulier — modernist set designer; Warhol, Spielberg & Seuss quartet handoff |
 | `eddie-vedder-musician/` | **eddie-vedder-musician** | Eddie Stonevoice — grunge-folk soundtrack; master ensemble handoff with all masters |
+| `adhdloganberry-feed/` | **adhdloganberry-feed** | [@ADHDloganberry](https://x.com/ADHDloganberry) X video feed — export & API post |
 | `video-creator/` | **video-creator** | End-to-end video: Fugu orchestration + Imagine/Seedance + Voxtral + FFmpeg |
 | `video-creator/pipelines/` | — | Sakana Fugu ready-made pipeline prompts (P1–P6) |
 | `SKILL.md` + `references/` | **dancing-skit** | Monty Python-style dance skit scripts |
@@ -71,6 +72,10 @@ Copy-Item -Recurse le-corbusier-set-designer\* "$env:USERPROFILE\.grok\skills\le
 # Eddie Vedder musician — soundtrack & vocals (master ensemble)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\eddie-vedder-musician" | Out-Null
 Copy-Item -Recurse eddie-vedder-musician\* "$env:USERPROFILE\.grok\skills\eddie-vedder-musician\"
+
+# ADHDloganberry X video feed
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\adhdloganberry-feed" | Out-Null
+Copy-Item -Recurse adhdloganberry-feed\* "$env:USERPROFILE\.grok\skills\adhdloganberry-feed\"
 
 # Video creator skill (Imagine + Seedance + Voxtral + FFmpeg)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\video-creator" | Out-Null
@@ -498,6 +503,27 @@ Or: *"padel mode on"* / *"South American padel mode"*
 
 Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md), or [`video/prompts/skit-to-video-workflow.md`](video/prompts/skit-to-video-workflow.md) to convert a skit into Seedance clips.
 
+### @ADHDloganberry X video feed
+
+Publish skit-dance clips to [https://x.com/ADHDloganberry](https://x.com/ADHDloganberry).
+
+```powershell
+cd adhdloganberry-feed
+copy .env.example .env
+# X_USER_ACCESS_TOKEN — see adhdloganberry-feed/references/x-api-setup.md
+pip install -r requirements.txt
+```
+
+```
+/adhdloganberry-feed wacky dance at Countdown — dry-run export for X
+```
+
+```
+/video-creator P1 dance meme → export for @ADHDloganberry
+```
+
+Workflow: produce → `export-for-x.ps1` → `caption.txt` → `post-to-x.py`
+
 ### Video creator (full pipeline)
 
 ```
@@ -532,6 +558,7 @@ Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over"*, *"
 - **stephen-spielberg-producer** — Steve Reelwright blockbuster producer; Spielberg-style homage (not affiliated with Amblin/estate)
 - **le-corbusier-set-designer** — Charles-Édouard Modulier set designer; Le Corbusier-style homage (1887–1965, Switzerland/France; not affiliated with Fondation Le Corbusier)
 - **eddie-vedder-musician** — Edward Stonevoice musician; Vedder-style homage (not affiliated with Pearl Jam/estate; original lyrics only)
+- **adhdloganberry-feed** — [@ADHDloganberry](https://x.com/ADHDloganberry) X video output feed; X API v2 chunked upload
 - **video-creator** — original skill; [Sakana Fugu](https://sakana.ai/fugu) orchestration; Voxtral via [Julia Turc](https://x.com/juliarturc/status/2069096367155507257) / [Mistral](https://mistral.ai/news/voxtral/)
 - **dancing-skit** — original skill for this repo
 - **swedish-chef-cookoff** — original skill for this repo (Muppet Show parody; not affiliated with Disney/Muppets)

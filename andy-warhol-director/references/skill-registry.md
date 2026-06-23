@@ -61,6 +61,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | CAST-24 | singaporean-ladies-man-personality | `singaporean-ladies-man-personality/SKILL.md` | — |
 | CAST-25 | swedish-chef-cookoff | `swedish-chef-cookoff/SKILL.md` | `references/chef-vocabulary.md` |
 | CAST-26 | portuguese-barista-personality | `portuguese-barista-personality/SKILL.md` | — |
+| CAST-27 | vietnamese-street-food-vendor-personality | `vietnamese-street-food-vendor-personality/SKILL.md` | — |
 
 ## Master Ensemble (production masters)
 
@@ -73,7 +74,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | MASTER-05 | eddie-vedder-musician | `eddie-vedder-musician/SKILL.md` | musician |
 | MASTER-06 | tom-cruise-stuntman-personality | `tom-cruise-stuntman-personality/SKILL.md` | stunt coordinator |
 
-**Full cast assembly (31 + 6 masters):** `references/full-cast-assembly.md`
+**Full cast assembly (32 + 6 masters):** `references/full-cast-assembly.md`
 
 ---
 
@@ -119,7 +120,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | **ME-06 Ensemble autonomous** | all six → video-creator P6 (all master prompt blocks) |
 | **ME-07 Mav stunt wall** | tom-cruise-stuntman-personality → andy-warhol-director → video-creator P1/P3 |
 | **GM-01** | alias for ME-01 — grand master ensemble full stack |
-| **CA-01 Full Factory Wall** | all CAST-01–26 → video-creator P4 personality montage |
+| **CA-01 Full Factory Wall** | all CAST-01–27 → video-creator P4 personality montage |
 | **CA-02 Master + 4 Superstars** | MASTER-* + 4 CAST-* → video-creator P2 |
 | **CA-03 Global regional grid** | CAST-01–24 rotate on repetition grid → P1 |
 | **CA-04 Troupe triple + announcer** | CAST-06/07/08 + CAST-03 or 04 → P2 |

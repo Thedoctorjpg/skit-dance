@@ -42,6 +42,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `south-american-padel-enthusiast-personality/` | **south-american-padel-enthusiast-personality** | Diego Morales — pádel passion, dale & volea metaphors |
 | `singaporean-ladies-man-personality/` | **singaporean-ladies-man-personality** | Marcus "MJ" Tan — Singlish smooth charm & steady lah |
 | `portuguese-barista-personality/` | **portuguese-barista-personality** | Afonso "Fofo" Mendes — Lisbon barista bica devotion & pastelaria warmth |
+| `vietnamese-street-food-vendor-personality/` | **vietnamese-street-food-vendor-personality** | Huong "Hương" Pham — Saigon sidewalk phở & bánh mì stall warmth |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `skits/` | — | Example production-ready dancing skit scripts |
 | `memes/` | — | Short dance meme caption packs (Scottish, chieftain guard, Chinese festival) |
@@ -175,6 +176,10 @@ Copy-Item singaporean-ladies-man-personality\SKILL.md "$env:USERPROFILE\.grok\sk
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\portuguese-barista-personality" | Out-Null
 Copy-Item portuguese-barista-personality\SKILL.md "$env:USERPROFILE\.grok\skills\portuguese-barista-personality\SKILL.md"
 
+# Vietnamese street food vendor personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\vietnamese-street-food-vendor-personality" | Out-Null
+Copy-Item vietnamese-street-food-vendor-personality\SKILL.md "$env:USERPROFILE\.grok\skills\vietnamese-street-food-vendor-personality\SKILL.md"
+
 # Devout Irish Catholic personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality" | Out-Null
 Copy-Item devout-irish-catholic-personality\SKILL.md "$env:USERPROFILE\.grok\skills\devout-irish-catholic-personality\SKILL.md"
@@ -212,7 +217,7 @@ Copy-Item seedance\zh\SKILL.md "$env:USERPROFILE\.grok\skills\seedance-prompt-zh
 
 Or: *"Factory mode"*, *"screen test"*, *"Warhol director"*
 
-**Full cast assembly (31 cast personas + 6 masters):**
+**Full cast assembly (32 cast personas + 6 masters):**
 
 ```
 /andy-warhol-director cast all — Factory wall, everyone dances the same beat 4×
@@ -604,6 +609,7 @@ Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over"*, *"
 - **thai-international-student-vlogger-personality** — original skill for this repo
 - **singaporean-ladies-man-personality** — original skill for this repo
 - **portuguese-barista-personality** — original skill for this repo
+- **vietnamese-street-food-vendor-personality** — original skill for this repo (CAST-27)
 - **tom-cruise-stuntman-personality** — MASTER-06 stunt coordinator; grand master ensemble handoff (homage persona; not affiliated with Tom Cruise)
 - **devout-irish-catholic-personality** — original skill for this repo
 - **muslim-artist-personality** — original skill for this repo

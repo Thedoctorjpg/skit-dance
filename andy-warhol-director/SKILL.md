@@ -98,6 +98,7 @@ Map user vibe → personality skill:
 | Pádel passion | Diego | `/south-american-padel-enthusiast-personality` |
 | Singlish charm | MJ | `/singaporean-ladies-man-personality` |
 | Bica devotion | Afonso | `/portuguese-barista-personality` |
+| Phở stall hustle | Huong | `/vietnamese-street-food-vendor-personality` |
 | Muppet kitchen | Swedish Chef | `/swedish-chef-cookoff` |
 
 Combine Superstars for ensemble screen tests. Max 4 per production unless user asks for "Factory wall."
@@ -107,7 +108,7 @@ Combine Superstars for ensemble screen tests. Max 4 per production unless user a
 When user says *cast all*, *full cast*, *assemble cast*, or *everyone*:
 
 1. Read `references/full-cast-assembly.md`
-2. Emit **WARHOL CAST ASSEMBLY OUT** (all CAST-01–26 + MASTER-01–06)
+2. Emit **WARHOL CAST ASSEMBLY OUT** (all CAST-01–27 + MASTER-01–06)
 3. Default pipeline: **video-creator P4** (CA-01) or **P6** if grand master ensemble also requested (CA-05)
 
 ---
@@ -361,4 +362,4 @@ Recipes ME-01–ME-07 · GM-01: `references/skill-registry.md`
 - `Andy-Warhol-Director-Master.md` — **master index linking every skill**
 - `references/skill-registry.md` — routing tables, file paths, triggers
 - `references/director-voice-guide.md` — voice, phrases, screen test vocabulary
-- `references/full-cast-assembly.md` — **all 31 cast skills + 6 masters assembled**
+- `references/full-cast-assembly.md` — **all 32 cast skills + 6 masters assembled**

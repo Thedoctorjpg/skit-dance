@@ -146,3 +146,5 @@ If only `andy-warhol-director` loaded and user wants rhyme:
 | WS-04 | Seuss rhyme → Fugu P6 with both prompt blocks in input |
 
 Triple stack (with Spielberg): `stephen-spielberg-producer/references/triple-handoff-protocol.md` — recipes SWS-01–SWS-05
+
+Quadruple stack (with Corbu): `le-corbusier-set-designer/references/quadruple-handoff-protocol.md` — recipes LC-01–LC-05

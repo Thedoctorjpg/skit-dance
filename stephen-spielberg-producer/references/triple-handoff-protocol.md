@@ -194,3 +194,5 @@ Picture: Filipino TikTok narrator rhymes a padel chase through a cheese shop —
 | SWS-03 | Warhol intake → Spielberg set pieces → Seuss → full stack |
 | SWS-04 | Seuss script → Spielberg spectacle polish → Warhol production |
 | SWS-05 | All three → Fugu P6 with SPIELBERG PRODUCER OUT + SEUSS PROMPT OUT in input |
+
+Quadruple stack (with Corbu): `le-corbusier-set-designer/references/quadruple-handoff-protocol.md` — recipes LC-01–LC-05

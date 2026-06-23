@@ -15,6 +15,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | PROD-05 | swedish-chef-cookoff | `/swedish-chef-cookoff` |
 | PROD-06 | dr-seuss-script-writer | `/dr-seuss-script-writer` · `dr-seuss-script-writer/SKILL.md` |
 | PROD-07 | stephen-spielberg-producer | `/stephen-spielberg-producer` · `stephen-spielberg-producer/SKILL.md` |
+| PROD-08 | le-corbusier-set-designer | `/le-corbusier-set-designer` · `le-corbusier-set-designer/SKILL.md` |
 
 ## Fugu Pipelines (via PROD-02)
 
@@ -88,8 +89,13 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | **SWS-03 Warhol → Steve polish** | andy-warhol-director → stephen-spielberg-producer → full stack |
 | **SWS-04 Seuss → Steve spectacle** | dr-seuss-script-writer → stephen-spielberg-producer → andy-warhol-director |
 | **SWS-05 Triple autonomous** | all three → video-creator P6 (SPIELBERG PRODUCER OUT + SEUSS PROMPT OUT) |
+| **LC-01 Full quartet** | le-corbusier-set-designer + stephen-spielberg-producer + andy-warhol-director + dr-seuss-script-writer → video-creator P2 |
+| **LC-02 Modulor grid** | le-corbusier-set-designer → andy-warhol-director → seedance-en zone shots |
+| **LC-03 Steve → Corbu → Ted** | stephen-spielberg-producer → le-corbusier-set-designer → dr-seuss-script-writer → andy-warhol-director |
+| **LC-04 Ted zones → Corbu plan** | dr-seuss-script-writer → le-corbusier-set-designer → stephen-spielberg-producer → andy-warhol-director |
+| **LC-05 Quartet autonomous** | all four → video-creator P6 (CORBU SET DESIGN OUT + SPIELBERG PRODUCER OUT + SEUSS PROMPT OUT) |
 
-Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md` · `stephen-spielberg-producer/references/triple-handoff-protocol.md`
+Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md` · `stephen-spielberg-producer/references/triple-handoff-protocol.md` · `le-corbusier-set-designer/references/quadruple-handoff-protocol.md`
 
 ---
 
@@ -107,3 +113,5 @@ Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md
 | warhol + seuss / both | andy-warhol-director + PROD-06 (handoff protocol) |
 | spielberg / speilburg / blockbuster producer | PROD-07 (+ andy-warhol-director + PROD-06 for triple stack) |
 | all three / wonder + rhyme + factory | PROD-07 + andy-warhol-director + PROD-06 (triple handoff) |
+| corbu / le corbusier / modulor / set design | PROD-08 (+ PROD-07 + PROD-06 for full quartet) |
+| all four / brutalist + wonder + rhyme | PROD-08 + PROD-07 + andy-warhol-director + PROD-06 (quadruple handoff) |

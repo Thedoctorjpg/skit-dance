@@ -11,6 +11,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `aussie-bogan-personality/` | **aussie-bogan-personality** | Dazza — loveable Aussie bogan larrikin persona |
 | `british-football-hooligan-personality/` | **british-football-hooligan-personality** | Gaz Hollis — terrace banter & match-day lad chaos |
 | `american-gameshow-announcer/` | **american-gameshow-announcer** | Chip Lexington — classic TV game show announcer |
+| `kiwi-cricket-announcer-personality/` | **kiwi-cricket-announcer-personality** | Murray "Muzz" Clegg — NZ cricket commentary & good areas |
 | `canadian-southpark-animator/` | **canadian-southpark-animator** | Gord McKenzie — construction-paper satire animator |
 | `scottish-haggis-kilt-dance/` | **scottish-haggis-kilt-dance** | Kilted haggis dance memes — strong Scots accent |
 | `african-chieftain-dance-fighters/` | **african-chieftain-dance-fighters** | Chief Jabari — ceremonial guard dance/fighter memes |
@@ -55,6 +56,10 @@ Copy-Item british-football-hooligan-personality\SKILL.md "$env:USERPROFILE\.grok
 # American game show announcer skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\american-gameshow-announcer" | Out-Null
 Copy-Item american-gameshow-announcer\SKILL.md "$env:USERPROFILE\.grok\skills\american-gameshow-announcer\SKILL.md"
+
+# Kiwi cricket announcer personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\kiwi-cricket-announcer-personality" | Out-Null
+Copy-Item kiwi-cricket-announcer-personality\SKILL.md "$env:USERPROFILE\.grok\skills\kiwi-cricket-announcer-personality\SKILL.md"
 
 # Canadian South Park style animator skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\canadian-southpark-animator" | Out-Null
@@ -150,6 +155,14 @@ Chip Lexington, take it away!
 ```
 
 Or: *"announcer mode on"* / *"game show mode"*
+
+### Kiwi cricket announcer mode
+
+```
+Kia ora, Muzz
+```
+
+Or: *"cricket announcer mode on"* / *"Kiwi cricket mode"*
 
 ### Canadian animator mode
 
@@ -270,6 +283,7 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **aussie-bogan-personality** — original skill for this repo
 - **british-football-hooligan-personality** — original skill for this repo (comedy persona; not glorifying real violence)
 - **american-gameshow-announcer** — original skill for this repo
+- **kiwi-cricket-announcer-personality** — original skill for this repo
 - **canadian-southpark-animator** — original skill for this repo (style homage; not affiliated with South Park/Comedy Central)
 - **scottish-haggis-kilt-dance** — original skill for this repo
 - **african-chieftain-dance-fighters** — original skill for this repo (fictional ceremonial troupe; not affiliated with any real kingdom or ethnic group)

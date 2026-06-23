@@ -11,6 +11,7 @@ Agent skills and video prompts for absurdist dancing comedy — from script to S
 | `seedance/` | **Seedance 2.0** prompt writing skill ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `video/assets/` | Character reference image for @Image1 |
 | `video/prompts/` | Ready-to-use Seedance prompts + skit→video workflow |
+| `skits/` | Example production-ready dancing skit scripts |
 
 ## Install
 
@@ -35,6 +36,8 @@ Copy-Item seedance\zh\SKILL.md "$env:USERPROFILE\.grok\skills\seedance-prompt-zh
 ```
 /dancing-skit job interview where the candidate dances their CV
 ```
+
+Example output: [`skits/the-supermarket-shuffle.md`](skits/the-supermarket-shuffle.md)
 
 ### Generate Seedance video prompts
 

@@ -27,6 +27,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `thai-international-student-vlogger-personality/` | **thai-international-student-vlogger-personality** | Natt Srisuk — study-abroad vlog diary & sabai chaos |
 | `filipina-tiktok-personality/` | **filipina-tiktok-personality** | Beatrice "Bea" Dela Cruz — Taglish TikTok storytime & slay |
 | `icelandic-beauty-personality/` | **icelandic-beauty-personality** | Elín Jónsdóttir — Nordic minimal beauty & þetta reddast |
+| `south-american-padel-enthusiast-personality/` | **south-american-padel-enthusiast-personality** | Diego Morales — pádel passion, dale & volea metaphors |
 | `singaporean-ladies-man-personality/` | **singaporean-ladies-man-personality** | Marcus "MJ" Tan — Singlish smooth charm & steady lah |
 | `seedance/` | **seedance-prompt-en/zh** | Seedance 2.0 video prompt writing ([dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill)) |
 | `skits/` | — | Example production-ready dancing skit scripts |
@@ -128,6 +129,10 @@ Copy-Item filipina-tiktok-personality\SKILL.md "$env:USERPROFILE\.grok\skills\fi
 # Icelandic beauty personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\icelandic-beauty-personality" | Out-Null
 Copy-Item icelandic-beauty-personality\SKILL.md "$env:USERPROFILE\.grok\skills\icelandic-beauty-personality\SKILL.md"
+
+# South American padel enthusiast personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\south-american-padel-enthusiast-personality" | Out-Null
+Copy-Item south-american-padel-enthusiast-personality\SKILL.md "$env:USERPROFILE\.grok\skills\south-american-padel-enthusiast-personality\SKILL.md"
 
 # Seedance prompt skills
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\seedance-prompt-en" | Out-Null
@@ -317,6 +322,14 @@ Góðan daginn, Elín
 
 Or: *"Icelandic beauty mode on"* / *"Icelandlic beauty mode"*
 
+### South American padel enthusiast mode
+
+```
+Qué tal, Diego
+```
+
+Or: *"padel mode on"* / *"South American padel mode"*
+
 ### Seedance video prompts
 
 Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md), or [`video/prompts/skit-to-video-workflow.md`](video/prompts/skit-to-video-workflow.md) to convert a skit into Seedance clips.
@@ -352,5 +365,6 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **devout-irish-catholic-personality** — original skill for this repo
 - **filipina-tiktok-personality** — original skill for this repo
 - **icelandic-beauty-personality** — original skill for this repo
+- **south-american-padel-enthusiast-personality** — original skill for this repo
 - **seedance/** — adapted from [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) (MIT)
 - Wacky dance scene prompts inspired by [KakuDrop's Seedance 2.0 demo](https://x.com/KakuDrop/status/2069181320010543409)

@@ -9,6 +9,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `SKILL.md` + `references/` | **dancing-skit** | Monty Python-style dance skit scripts |
 | `swedish-chef-cookoff/` | **swedish-chef-cookoff** | Muppets Swedish Chef cook-off challenges |
 | `aussie-bogan-personality/` | **aussie-bogan-personality** | Dazza — loveable Aussie bogan larrikin persona |
+| `british-football-hooligan-personality/` | **british-football-hooligan-personality** | Gaz Hollis — terrace banter & match-day lad chaos |
 | `american-gameshow-announcer/` | **american-gameshow-announcer** | Chip Lexington — classic TV game show announcer |
 | `canadian-southpark-animator/` | **canadian-southpark-animator** | Gord McKenzie — construction-paper satire animator |
 | `scottish-haggis-kilt-dance/` | **scottish-haggis-kilt-dance** | Kilted haggis dance memes — strong Scots accent |
@@ -41,6 +42,10 @@ Copy-Item -Recurse swedish-chef-cookoff\* "$env:USERPROFILE\.grok\skills\swedish
 # Aussie bogan personality skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\aussie-bogan-personality" | Out-Null
 Copy-Item aussie-bogan-personality\SKILL.md "$env:USERPROFILE\.grok\skills\aussie-bogan-personality\SKILL.md"
+
+# British football hooligan personality skill
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\british-football-hooligan-personality" | Out-Null
+Copy-Item british-football-hooligan-personality\SKILL.md "$env:USERPROFILE\.grok\skills\british-football-hooligan-personality\SKILL.md"
 
 # American game show announcer skill
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\american-gameshow-announcer" | Out-Null
@@ -104,6 +109,14 @@ G'day Dazza
 ```
 
 Or: *"bogan mode on"* / *"talk like an Aussie bogan"*
+
+### British football hooligan mode
+
+```
+Oi oi, Gaz
+```
+
+Or: *"hooligan mode on"* / *"football hooligan mode"*
 
 ### Game show announcer mode
 
@@ -190,6 +203,7 @@ Use [`video/prompts/wacky-dance-scenes.md`](video/prompts/wacky-dance-scenes.md)
 - **dancing-skit** — original skill for this repo
 - **swedish-chef-cookoff** — original skill for this repo (Muppet Show parody; not affiliated with Disney/Muppets)
 - **aussie-bogan-personality** — original skill for this repo
+- **british-football-hooligan-personality** — original skill for this repo (comedy persona; not glorifying real violence)
 - **american-gameshow-announcer** — original skill for this repo
 - **canadian-southpark-animator** — original skill for this repo (style homage; not affiliated with South Park/Comedy Central)
 - **scottish-haggis-kilt-dance** — original skill for this repo

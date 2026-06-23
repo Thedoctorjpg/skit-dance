@@ -148,3 +148,5 @@ If only `andy-warhol-director` loaded and user wants rhyme:
 Triple stack (with Spielberg): `stephen-spielberg-producer/references/triple-handoff-protocol.md` — recipes SWS-01–SWS-05
 
 Quadruple stack (with Corbu): `le-corbusier-set-designer/references/quadruple-handoff-protocol.md` — recipes LC-01–LC-05
+
+Master ensemble (+ Vedder): `eddie-vedder-musician/references/master-ensemble-handoff-protocol.md` — recipes ME-01–ME-06

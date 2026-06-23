@@ -205,3 +205,5 @@ Set study: brutalist supermarket pilotis — rhyming blockbuster dance under the
 | LC-03 | Spielberg set pieces → Corbu axes → Seuss rhyme geography → Warhol |
 | LC-04 | Seuss stanza zones → Corbu plan → Steve spectacle polish |
 | LC-05 | All four → Fugu P6 (CORBU SET DESIGN OUT + SPIELBERG PRODUCER OUT + SEUSS PROMPT OUT) |
+
+Master ensemble (+ Vedder): `eddie-vedder-musician/references/master-ensemble-handoff-protocol.md` — recipes ME-01–ME-06

@@ -16,6 +16,7 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | PROD-06 | dr-seuss-script-writer | `/dr-seuss-script-writer` · `dr-seuss-script-writer/SKILL.md` |
 | PROD-07 | stephen-spielberg-producer | `/stephen-spielberg-producer` · `stephen-spielberg-producer/SKILL.md` |
 | PROD-08 | le-corbusier-set-designer | `/le-corbusier-set-designer` · `le-corbusier-set-designer/SKILL.md` |
+| PROD-09 | eddie-vedder-musician | `/eddie-vedder-musician` · `eddie-vedder-musician/SKILL.md` |
 
 ## Fugu Pipelines (via PROD-02)
 
@@ -94,8 +95,13 @@ Quick lookup for `andy-warhol-director`. Full prose index: `../Andy-Warhol-Direc
 | **LC-03 Steve → Corbu → Ted** | stephen-spielberg-producer → le-corbusier-set-designer → dr-seuss-script-writer → andy-warhol-director |
 | **LC-04 Ted zones → Corbu plan** | dr-seuss-script-writer → le-corbusier-set-designer → stephen-spielberg-producer → andy-warhol-director |
 | **LC-05 Quartet autonomous** | all four → video-creator P6 (CORBU SET DESIGN OUT + SPIELBERG PRODUCER OUT + SEUSS PROMPT OUT) |
+| **ME-01 Full master ensemble** | all five PROD-06–09 + andy-warhol-director → video-creator P2 + Voxtral |
+| **ME-02 Vedder score wall** | eddie-vedder-musician → andy-warhol-director → video-creator P1 |
+| **ME-03 Rhyme + score** | dr-seuss-script-writer → eddie-vedder-musician → andy-warhol-director |
+| **ME-04 Steve music arc** | stephen-spielberg-producer → eddie-vedder-musician → le-corbusier-set-designer → andy-warhol-director |
+| **ME-06 Ensemble autonomous** | all five → video-creator P6 (all master prompt blocks) |
 
-Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md` · `stephen-spielberg-producer/references/triple-handoff-protocol.md` · `le-corbusier-set-designer/references/quadruple-handoff-protocol.md`
+Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md` · `stephen-spielberg-producer/references/triple-handoff-protocol.md` · `le-corbusier-set-designer/references/quadruple-handoff-protocol.md` · `eddie-vedder-musician/references/master-ensemble-handoff-protocol.md`
 
 ---
 
@@ -115,3 +121,5 @@ Handoff protocols: `dr-seuss-script-writer/references/warhol-handoff-protocol.md
 | all three / wonder + rhyme + factory | PROD-07 + andy-warhol-director + PROD-06 (triple handoff) |
 | corbu / le corbusier / modulor / set design | PROD-08 (+ PROD-07 + PROD-06 for full quartet) |
 | all four / brutalist + wonder + rhyme | PROD-08 + PROD-07 + andy-warhol-director + PROD-06 (quadruple handoff) |
+| vedder / vetter / eddie / soundtrack / score | PROD-09 (+ other masters for ME-01) |
+| master ensemble / all five / full stack | PROD-06–09 + andy-warhol-director (master-ensemble handoff) |

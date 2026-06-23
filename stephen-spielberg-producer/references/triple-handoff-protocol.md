@@ -196,3 +196,5 @@ Picture: Filipino TikTok narrator rhymes a padel chase through a cheese shop —
 | SWS-05 | All three → Fugu P6 with SPIELBERG PRODUCER OUT + SEUSS PROMPT OUT in input |
 
 Quadruple stack (with Corbu): `le-corbusier-set-designer/references/quadruple-handoff-protocol.md` — recipes LC-01–LC-05
+
+Master ensemble (+ Vedder): `eddie-vedder-musician/references/master-ensemble-handoff-protocol.md` — recipes ME-01–ME-06

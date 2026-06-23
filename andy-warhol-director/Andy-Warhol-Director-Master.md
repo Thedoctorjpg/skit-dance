@@ -18,6 +18,7 @@ andy-warhol-director (YOU — master router)
     │   ├── dr-seuss-script-writer (Ted Rhymewell — Warhol prompt partner)
     │   ├── stephen-spielberg-producer (Steve Reelwright — blockbuster greenlight)
     │   ├── le-corbusier-set-designer (Le Corbu Modulier — modernist set volumes)
+    │   ├── eddie-vedder-musician (Eddie Stonevoice — grunge-folk soundtrack)
     │   └── swedish-chef-cookoff
     ├── CAST LAYER (Factory Superstars — 24 personalities + dance troupes)
     └── ASSETS LAYER
@@ -41,6 +42,7 @@ andy-warhol-director (YOU — master router)
 | **dr-seuss-script-writer** | `dr-seuss-script-writer/SKILL.md` | `/dr-seuss-script-writer` | Rhyming scripts; WARHOL PROMPT IN ↔ SEUSS PROMPT OUT handoff |
 | **stephen-spielberg-producer** | `stephen-spielberg-producer/SKILL.md` | `/stephen-spielberg-producer` | Blockbuster treatments; SPIELBERG PRODUCER OUT ↔ Warhol ↔ Seuss triple handoff |
 | **le-corbusier-set-designer** | `le-corbusier-set-designer/SKILL.md` | `/le-corbusier-set-designer` | Modulor set studies; CORBU SET DESIGN OUT ↔ Warhol ↔ Spielberg ↔ Seuss quadruple handoff |
+| **eddie-vedder-musician** | `eddie-vedder-musician/SKILL.md` | `/eddie-vedder-musician` | Soundtrack & vocals; VEDDER SOUNDTRACK OUT ↔ master ensemble handoff |
 
 ### video-creator subsystems
 
@@ -133,6 +135,7 @@ User message
     ├─ dance + short meme → personality troupe OR video-creator P1
     ├─ video / imagine / seedance → video-creator (+ seedance as needed)
     ├─ cook-off / chef → swedish-chef-cookoff
+    ├─ soundtrack / Vedder / score → eddie-vedder-musician (+ master ensemble if full stack)
     ├─ set design / Modulor / Corbu → le-corbusier-set-designer (+ quartet handoff if full stack)
     ├─ blockbuster / wonder / Spielberg → stephen-spielberg-producer (+ Warhol/Seuss triple handoff)
     ├─ rhyme / Seuss / verse script → dr-seuss-script-writer (+ Warhol handoff if Factory)
@@ -147,16 +150,18 @@ User message
 
 1. **Producer** (`stephen-spielberg-producer`) — optional cinematic treatment + set pieces
 2. **Set designer** (`le-corbusier-set-designer`) — optional Modulor volume + spatial repetition grid
-3. **Director** (`andy-warhol-director`) — Screen Test brief + cast + repetition grid
-4. **Writer** (`dancing-skit` or `dr-seuss-script-writer`) — prose script or rhyming script `.md`
-5. **Cast** (1+ Superstar skills) — dialogue, captions, voice guides
-6. **Visuals** (`seedance-prompt-en` or `video-creator` Imagine path)
-7. **Voice** (`video-creator` → Voxtral TTS blocks)
-8. **Orchestration** (optional Fugu P2/P6 via `SAKANA_API_KEY`)
-9. **Assembly** (`video-creator` → FFmpeg commands)
-10. **Set signoff** — CORBU SET SIGNOFF (if Corbu in stack)
-11. **Producer greenlight** — SPIELBERG GREENLIGHT ACK (if Steve in stack)
-12. **Director sign-off** — ANDY NOTE
+3. **Musician** (`eddie-vedder-musician`) — optional soundtrack + Voxtral vocal blocks
+4. **Director** (`andy-warhol-director`) — Screen Test brief + cast + repetition grid
+5. **Writer** (`dancing-skit` or `dr-seuss-script-writer`) — prose script or rhyming script `.md`
+6. **Cast** (1+ Superstar skills) — dialogue, captions, voice guides
+7. **Visuals** (`seedance-prompt-en` or `video-creator` Imagine path)
+8. **Voice** (`video-creator` → Voxtral TTS from Eddie's blocks + cast)
+9. **Orchestration** (optional Fugu P2/P6 via `SAKANA_API_KEY`)
+10. **Assembly** (`video-creator` → FFmpeg commands)
+11. **Set signoff** — CORBU SET SIGNOFF (if Corbu in stack)
+12. **Session signoff** — VEDDER SESSION SIGNOFF (if Eddie in stack)
+13. **Producer greenlight** — SPIELBERG GREENLIGHT ACK (if Steve in stack)
+14. **Director sign-off** — ANDY NOTE
 
 ---
 

@@ -10,6 +10,7 @@ Agent skills, example scripts, and video prompts for absurdist comedy — dancin
 | `dr-seuss-script-writer/` | **dr-seuss-script-writer** | Ted Rhymewell — rhyming Seuss-style scripts; Warhol prompt handoff partner |
 | `stephen-spielberg-producer/` | **stephen-spielberg-producer** | Steve Reelwright — blockbuster producer; Warhol & Seuss triple handoff |
 | `le-corbusier-set-designer/` | **le-corbusier-set-designer** | Le Corbu Modulier — modernist set designer; Warhol, Spielberg & Seuss quartet handoff |
+| `eddie-vedder-musician/` | **eddie-vedder-musician** | Eddie Stonevoice — grunge-folk soundtrack; master ensemble handoff with all masters |
 | `video-creator/` | **video-creator** | End-to-end video: Fugu orchestration + Imagine/Seedance + Voxtral + FFmpeg |
 | `video-creator/pipelines/` | — | Sakana Fugu ready-made pipeline prompts (P1–P6) |
 | `SKILL.md` + `references/` | **dancing-skit** | Monty Python-style dance skit scripts |
@@ -65,6 +66,10 @@ Copy-Item -Recurse stephen-spielberg-producer\* "$env:USERPROFILE\.grok\skills\s
 # Le Corbusier set designer — Modulor volumes (pairs with Warhol, Spielberg & Seuss)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\le-corbusier-set-designer" | Out-Null
 Copy-Item -Recurse le-corbusier-set-designer\* "$env:USERPROFILE\.grok\skills\le-corbusier-set-designer\"
+
+# Eddie Vedder musician — soundtrack & vocals (master ensemble)
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\eddie-vedder-musician" | Out-Null
+Copy-Item -Recurse eddie-vedder-musician\* "$env:USERPROFILE\.grok\skills\eddie-vedder-musician\"
 
 # Video creator skill (Imagine + Seedance + Voxtral + FFmpeg)
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.grok\skills\video-creator" | Out-Null
@@ -193,6 +198,21 @@ Copy-Item seedance\zh\SKILL.md "$env:USERPROFILE\.grok\skills\seedance-prompt-zh
 Or: *"Factory mode"*, *"screen test"*, *"Warhol director"*
 
 Master index linking every skill: [`andy-warhol-director/Andy-Warhol-Director-Master.md`](andy-warhol-director/Andy-Warhol-Director-Master.md)
+
+### Eddie Vedder musician + master ensemble (all five)
+
+```
+/eddie-vedder-musician + /le-corbusier-set-designer + /stephen-spielberg-producer + /andy-warhol-director + /dr-seuss-script-writer
+Session: grunge-folk score for rhyming brutalist supermarket dance — full master ensemble
+```
+
+Or: *"Eddie Vedder musician"*, *"Eddie Vetter"* (common misspelling), *"Vedder soundtrack"*, *"master ensemble"*, *"all five"*
+
+Master ensemble handoff: [`eddie-vedder-musician/references/master-ensemble-handoff-protocol.md`](eddie-vedder-musician/references/master-ensemble-handoff-protocol.md)
+
+```
+/eddie-vedder-musician original baritone hook for a Factory screen test dance skit
+```
 
 ### Le Corbusier set designer + Warhol + Spielberg + Seuss (full quartet)
 
@@ -490,6 +510,7 @@ Or: `/imagine-video`, *"make a narrated skit video"*, *"Voxtral voice-over"*, *"
 - **dr-seuss-script-writer** — Ted Rhymewell rhyming writer; Seuss-style homage (not affiliated with Seuss Enterprises)
 - **stephen-spielberg-producer** — Steve Reelwright blockbuster producer; Spielberg-style homage (not affiliated with Amblin/estate)
 - **le-corbusier-set-designer** — Charles-Édouard Modulier set designer; Le Corbusier-style homage (1887–1965, Switzerland/France; not affiliated with Fondation Le Corbusier)
+- **eddie-vedder-musician** — Edward Stonevoice musician; Vedder-style homage (not affiliated with Pearl Jam/estate; original lyrics only)
 - **video-creator** — original skill; [Sakana Fugu](https://sakana.ai/fugu) orchestration; Voxtral via [Julia Turc](https://x.com/juliarturc/status/2069096367155507257) / [Mistral](https://mistral.ai/news/voxtral/)
 - **dancing-skit** — original skill for this repo
 - **swedish-chef-cookoff** — original skill for this repo (Muppet Show parody; not affiliated with Disney/Muppets)
